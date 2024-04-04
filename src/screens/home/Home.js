@@ -9,12 +9,6 @@ import Winter from './Winter';
 
 function Home() {
 
-    useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(res => res.json())
-            .then(json => console.log(json))
-    }, [])
-
     return (
         <div class="home">
             <div class="container-suit">

@@ -69,19 +69,19 @@ function Winter() {
         <div class="winter">
             <div class="container">
                 <div class="winter-items">
-                    <img src={winter} alt='winter' />
+                    <img src={winter} alt='winter' class="d-none d-lg-block" />
                     <div class='winter-context'>
-                        <div class="raw d-flex ">
-                            <div class='col-4 winter-left'>
+                        <div class="raw d-lg-flex ">
+                            <div class='col-12 col-lg-4 winter-left'>
                                 <h1>100%</h1>
                                 <p>Material qualitiy</p>
                             </div>
                             <div class='col-4'>
                             </div>
-                            <div class='col-4 winter-right'>
+                            <div class='col-12 col-lg-4 winter-right'>
                                 <h2>"Ferghana natural products"</h2>
                                 <p>has been a company that produces cotton fabrics for use all over the world for many years</p>
-                                <button class="btn">Collection</button>
+                                <button class="btn mt-1 mt-md-2 mt-lg-3">Collection</button>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ function Winter() {
                     </div>
                     <div class="row row-cols-1 row-cols-md-5 g-4 mt-4">
                         {winterCollection.map(item => (
-                            <div class="col">
+                            <div class="col" key={item.id}>
                                 <div class="card h-100">
                                     <img src={item.name} class="card-img-top" alt={item.id} />
                                     <div class="card-body">

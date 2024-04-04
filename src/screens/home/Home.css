@@ -1,26 +1,25 @@
-body {
+html {
     font-size: 16px;
 }
 
 .home-items {
     position: relative;
-    background-color: rgb(61, 61, 61);
+    background: linear-gradient(rgb(44, 43, 43), rgb(182, 181, 181), rgb(44, 43, 43)) ;
     width: 100%;
-    /* height: 95vh; */
-    /* border-radius: 35px; */
-    /* border: 1px solid red; */
+    height: 50vh;
 }
 
 .home-items img {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     object-fit: cover;
 }
 
 .context {
     position: absolute;
-    top: 11rem;
+    top: 20vh;
+    right: 1rem;
 }
 
 .context h1,
@@ -30,6 +29,21 @@ h3 {
     display: flex;
     justify-content: end;
     color: white;
+}
+
+.context h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.context h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.context h3 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .home-support-context,
@@ -52,9 +66,9 @@ p {
 
 .winter-items {
     position: relative;
-    margin-top: 10px;
+    /* margin-top: 2rem; */
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     margin-bottom: 50px;
     border: 1px solid red;
 }
@@ -62,7 +76,7 @@ p {
 .winter-items img {
     position: absolute;
     width: 75%;
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
     z-index: 1;
     top: 10%;
@@ -71,10 +85,8 @@ p {
 }
 
 .winter-context {
-    position: absolute;
-    top: 35%;
     width: 100%;
-    height: 45vh;
+    height: 25rem;
     background: linear-gradient(rgb(1, 1, 73), rgb(127, 127, 240), rgb(1, 1, 73));
     border-radius: 35px;
 }
@@ -111,7 +123,6 @@ p {
 }
 
 .winter-right>button {
-    margin-top: 1.5rem;
     background-color: white;
     font-weight: bold;
 }
@@ -124,79 +135,29 @@ p {
 
 .card:hover {
     cursor: pointer;
-    color: blue;    
+    color: blue;
     font-weight: bold;
     transition: all 0.5s ease-out;
     box-shadow: 0 10px 10px 0;
 }
 
-
 /* RESPONSIVE */
 
-@media (min-width: 300px) {
-
-    .home-items {
-        height: 80vh;
-    }
-
-    .context {
-        top: 9rem;
-        right: 1rem;
-    }
-
-    .context h1,
-    h2,
-    h3 {
-        line-height: 2.5rem;
-    }
-
-    .context h1 {
-        font-size: 4rem;
-        font-weight: bolder;
-    }
-
-    .context h2 {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    .context h3 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-}
+@media (min-width: 300px) {}
 
 @media (min-width: 576px) {
 
-    .context {
-        top: 8rem;
-    }
-
-    .context h1,
-    h2,
-    h3 {
-        line-height: 3rem;
-    }
-
-    .context h1 {
-        font-size: 4.5rem;
-        font-weight: bolder;
-    }
-
-    .context h2 {
-        font-size: 3.5rem;
-        font-weight: bold;
-    }
-
-    .context h3 {
-        font-size: 2.5rem;
-        font-weight: bold;
+    html {
+        font-size: 18px;
     }
 
 }
 
 @media (min-width: 768px) {
+
+    html {
+        font-size: 20px;
+    }
 
     .container-suit {
         width: 100%;
@@ -205,38 +166,36 @@ p {
     }
 
     .home-items {
-        width: 100%;
         border-radius: 35px;
     }
 
-    .context {
-        top: 7rem;
+    .home-items img {
+        width: 70%;
     }
 
-    .context h1,
-    h2,
-    h3 {
-        line-height: 3.5rem;
+    .winter-items {
+        height: 60vh;
     }
 
-    .context h1 {
-        font-size: 5rem;
-        font-weight: bolder;
-    }
-
-    .context h2 {
-        font-size: 4rem;
-        font-weight: bold;
-    }
-
-    .context h3 {
-        font-size: 3rem;
-        font-weight: bold;
+    .winter-context {
+        height: 50vh;
     }
 
 }
 
 @media (min-width: 992px) {
+
+    html {
+        font-size: 22px;
+    }
+
+    .home-items {
+        height: 60vh;
+    }
+
+    .home-items img {
+        height: 70vh;
+    }
 
     .container-suit {
         width: 100%;
@@ -244,71 +203,31 @@ p {
         padding-right: 4rem;
     }
 
-    .home-items {
-        height: 90vh;
+
+    .winter-items {
+        height: 80vh;
     }
 
-    .home-items img {
-        width: 70%;
-    }
-
-    .context {
-        top: 6;
-    }
-
-    .context h1,
-    h2,
-    h3 {
-        line-height: 4.5rem;
-    }
-
-    .context h1 {
-        font-size: 6rem;
-        font-weight: bolder;
-    }
-
-    .context h2 {
-        font-size: 5rem;
-        font-weight: bold;
-    }
-
-    .context h3 {
-        font-size: 3.5rem;
-        font-weight: bold;
+    .winter-context {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        height: 45vh;
+        background: linear-gradient(rgb(1, 1, 73), rgb(127, 127, 240), rgb(1, 1, 73));
+        border-radius: 35px;
     }
 }
 
 @media (min-width: 1200px) {
 
-    .home-items {
-        height: 95vh;
-    }
-
-    .home-items img {
-        width: 60%;
-    }
-
-    .context {
-        top: 10rem;
+    html {
+        font-size: 24px;
     }
 
 
-    .context h1 {
-        font-size: 10rem;
-        line-height: 9rem;
-        font-weight: bolder;
+    .winter-items {
+        height: 90vh;
     }
 
-    .context h2 {
-        font-size: 8rem;
-        line-height: 7rem;
-        font-weight: bold;
-    }
-
-    .context h3 {
-        font-size: 5rem;
-        line-height: 5rem;
-        font-weight: bold;
-    }
 
 }
