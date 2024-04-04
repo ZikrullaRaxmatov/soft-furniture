@@ -10,18 +10,18 @@ function Header() {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse  " id="navbarTogglerDemo02">
-                        <ul class="navbar-nav d-flex justify-content-center border border-danger w-100 mb-2 mb-lg-0 p-3">
+                        <ul class="navbar-nav d-flex justify-content-center border border-danger w-100 mb-2 mb-lg-0 p-2">
                             <li class="nav-item">
-                                <a class="nav-link fs-5 me-4" href="#!">Home</a>
+                                <a class="nav-link me-4" href="#!">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 me-4" href="#!">Collection</a>
+                                <a class="nav-link me-4" href="#!">Collection</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 me-4" href="#!">About Us</a>
+                                <a class="nav-link me-4" href="#!">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 me-4" href="#!">Contact</a>
+                                <a class="nav-link me-4" href="#!">Contact</a>
                             </li>
                         </ul>
                     </div>

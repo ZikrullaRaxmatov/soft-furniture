@@ -1,26 +1,37 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-/* @media (min-width: 300px) {
-
+html {
+  font-size: 16px;
 }
 
-@media (min-width: 576px) {
 
+@media (min-width: 300px) {}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) {
-
+  html {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 992px) {
-
+  html {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 1200px) {
-
-} */
+  html {
+    font-size: 24px;
+  }
+}
