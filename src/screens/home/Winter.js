@@ -1,5 +1,68 @@
 import React from 'react';
 import winter from './img/111.png'
+import win15 from './collection/diz-15-scaled-370x278.jpg'
+import win16 from './collection/diz-16-scaled-370x278.jpg'
+import win17 from './collection/diz-17-scaled-370x278.jpg'
+import win18 from './collection/diz-18-scaled-370x278.jpg'
+import win19 from './collection/diz-19-scaled-370x278.jpg'
+import win20 from './collection/diz-20-scaled-370x278.jpg'
+import win21 from './collection/diz-21-370x278.jpg'
+import win22 from './collection/diz-22-scaled-370x278.jpg'
+import win23 from './collection/diz-23-scaled-370x278.jpg'
+import win24 from './collection/diz-24-scaled-370x278.jpg'
+
+const winterCollection = [
+    {
+        id: "15",
+        name: win15,
+        type: "Squares"
+    },
+    {
+        id: "16",
+        name: win16,
+        type: "Ikat"
+    },
+    {
+        id: "17",
+        name: win17,
+        type: "Circles"
+    },
+    {
+        id: "18",
+        name: win18,
+        type: "Geometry blue"
+    },
+    {
+        id: "19",
+        name: win19,
+        type: "Tropical leaves"
+    },
+    {
+        id: "20",
+        name: win20,
+        type: "Bambi"
+    },
+    {
+        id: "21",
+        name: win21,
+        type: "Byzantium"
+    },
+    {
+        id: "22",
+        name: win22,
+        type: "Evening garden"
+    },
+    {
+        id: "23",
+        name: win23,
+        type: "Feather Marquis"
+    },
+    {
+        id: "24",
+        name: win24,
+        type: "Lavender roses"
+    },
+]
 
 function Winter() {
     return (
@@ -31,98 +94,16 @@ function Winter() {
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-md-5 g-4 mt-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        {winterCollection.map(item => (
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src={item.name} class="card-img-top" alt={item.id} />
+                                    <div class="card-body">
+                                        <h5 class="card-title">{item.type}</h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a short card.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-5 g-4 mt-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a short card.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

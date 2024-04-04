@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../home/Home.css'
 import home from './img/111-copy.png'
 import group from './img/Group-995.svg'
@@ -8,6 +8,13 @@ import wallet from './img/Wallet_745515.svg'
 import Winter from './Winter';
 
 function Home() {
+
+    useEffect(() => {
+        fetch('https://fakestoreapi.com/products')
+            .then(res => res.json())
+            .then(json => console.log(json))
+    }, [])
+
     return (
         <div class="home">
             <div class="container-suit">
@@ -52,7 +59,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Winter/>
+            <Winter />
         </div>
     );
 }

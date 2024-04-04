@@ -122,6 +122,13 @@ p {
     color: white;
 }
 
+.card:hover {
+    cursor: pointer;
+    color: blue;    
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+    box-shadow: 0 10px 10px 0;
+}
 
 
 /* RESPONSIVE */
