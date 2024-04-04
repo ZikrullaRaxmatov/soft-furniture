@@ -6,10 +6,12 @@ import './App.css';
 function App() {
 
   return (
-    <Routes>
-      <Route path='/' element={<Header />} />
-      <Route path='/home' element={<Home />} />
-    </Routes>
+    <div>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </div>
   );
 }
 
