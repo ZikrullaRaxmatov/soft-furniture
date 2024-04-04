@@ -20,37 +20,56 @@ function Home() {
                         <h1>Products</h1>
                     </div>
                 </div>
-                <div class="home-support mt-5 ">
-                    <div class='raw d-flex border border-danger pt-3'>
-                        <div class="col-3 text-center">
-                            <img src={delivery} alt='delivery' />
-                            <div class='home-support-context'>
-                                <h4>Free shipping</h4>
-                                <p>Free shipping on all orders</p>
+                <div class="home-support mt-3">
+                    <div class="raw d-sm-flex border border-danger">
+                        <div class="col col-sm-6 d-md-flex1">
+                            <div class="col-12 col-md-6 w-100 text-center border border-danger">
+                                <img src={delivery} alt='delivery' />
+                                <div class='home-support-context'>
+                                    <h4>Free shipping</h4>
+                                    <p>Free shipping on all orders</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 w-100 text-center">
+                                <img src={guarantee} alt='guarantee' />
+                                <div>
+                                    <h4>Return Guarantee</h4>
+                                    <p>30 day money back</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-3 text-center">
-                            <img src={guarantee} alt='guarantee' />
-                            <div>
-                                <h4>Return Guarantee</h4>
-                                <p>30 day money back</p>
+                        <div class="col col-sm-6 d-md-flex1">
+                            <div class="col-12 col-md-6 w-100 text-center">
+                                <img src={group} alt='group' />
+                                <div>
+                                    <h4>Online support 24/7</h4>
+                                    <p>Technical support 24/7</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-3 text-center">
-                            <img src={group} alt='group' />
-                            <div>
-                                <h4>Online support 24/7</h4>
-                                <p>Technical support 24/7</p>
-                            </div>
-                        </div>
-                        <div class="col-3 text-center">
-                            <img src={wallet} alt='wallet' />
-                            <div>
-                                <h4>Secure payment</h4>
-                                <p>All payment methods accepted</p>
+                            <div class="col-12 col-md-6 w-100 text-center">
+                                <img src={wallet} alt='wallet' />
+                                <div>
+                                    <h4>Secure payment</h4>
+                                    <p>All payment methods accepted</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    {/* <div class='raw d-block d-sm-flex border border-danger pt-3 mt-5'>
+                        <div class="col-12 col-sm-6 col-md-3 text-center border border-danger">
+                            
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 text-center">
+                            
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 text-center">
+                            
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 text-center">
+                            
+                        </div>
+                    </div> */}
                 </div>
             </div>
             <Winter />
