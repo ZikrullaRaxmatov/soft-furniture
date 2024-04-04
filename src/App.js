@@ -1,10 +1,15 @@
+import { Route, Routes } from 'react-router-dom';
+import Header from './screens/Header';
 import './App.css';
+import Home from './screens/Home';
 
 function App() {
+
   return (
-    <div>
-      Hello!
-    </div>
+    <Routes>
+      <Route path='/' element={<Header />} />
+      <Route path='/home' element={<Home />} />
+    </Routes>
   );
 }
 
