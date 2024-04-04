@@ -5,6 +5,7 @@ import group from './img/Group-995.svg'
 import delivery from './img/delivery_1095359.svg'
 import guarantee from './img/guarantee_952398.svg'
 import wallet from './img/Wallet_745515.svg'
+import Winter from './Winter';
 
 function Home() {
     return (
@@ -19,29 +20,29 @@ function Home() {
                     </div>
                 </div>
                 <div class="home-support mt-5 ">
-                    <div class='raw border border-danger'>
-                        <div class="col-md-3 text-center border border-danger">
+                    <div class='raw d-flex border border-danger pt-3'>
+                        <div class="col-3 text-center">
                             <img src={delivery} alt='delivery' />
-                            <div>
+                            <div class='home-support-context'>
                                 <h4>Free shipping</h4>
                                 <p>Free shipping on all orders</p>
                             </div>
                         </div>
-                        <div class="col-md-3 text-center">
+                        <div class="col-3 text-center">
                             <img src={guarantee} alt='guarantee' />
                             <div>
                                 <h4>Return Guarantee</h4>
                                 <p>30 day money back</p>
                             </div>
                         </div>
-                        <div class="col-md-3 text-center">
+                        <div class="col-3 text-center">
                             <img src={group} alt='group' />
                             <div>
                                 <h4>Online support 24/7</h4>
                                 <p>Technical support 24/7</p>
                             </div>
                         </div>
-                        <div class="col-md-3 text-center">
+                        <div class="col-3 text-center">
                             <img src={wallet} alt='wallet' />
                             <div>
                                 <h4>Secure payment</h4>
@@ -49,11 +50,9 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    {/* <div class="raw">
-
-                    </div> */}
                 </div>
             </div>
+            <Winter/>
         </div>
     );
 }

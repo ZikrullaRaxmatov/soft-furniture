@@ -30,32 +30,13 @@ h3 {
     display: flex;
     justify-content: end;
     color: white;
-
 }
 
-/* .home-support {
-    display: flex;  
-} */
-
-
-/* .home-support ul {
-    width: 100%;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 15px;
-    border: 1px solid red;
+.home-support-context,
+h4,
+p {
+    line-height: 1rem;
 }
-
-.home-support li {
-    display: flex;
-    justify-content: center;
-}
-
-.home-support li>div {
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    line-height: 5px;
-} */
 
 .home-support h4 {
     font-weight: bold;
@@ -67,9 +48,80 @@ h3 {
     font-size: 0.8rem;
 }
 
-.home-support img {
-    width: 3rem;
+/* Winter */
+
+.winter-items {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 50px;
+    border: 1px solid red;
 }
+
+.winter-items img {
+    position: absolute;
+    width: 75%;
+    height: 80vh;
+    object-fit: cover;
+    z-index: 1;
+    top: 10%;
+    left: 10%;
+    /* border: 1px solid red; */
+}
+
+.winter-context {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(rgb(1, 1, 73), rgb(127, 127, 240), rgb(1, 1, 73));
+    border-radius: 35px;
+}
+
+.winter-left,
+.winter-right {
+    text-align: center;
+}
+
+.winter-left>h1 {
+    margin-top: 4rem;
+    color: white;
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+.winter-left>p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.winter-right>h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.winter-right>p {
+    margin-top: 2rem;
+    color: rgb(214, 212, 212);
+    font-size: 1rem;
+}
+
+.winter-right>button {
+    margin-top: 1.5rem;
+    background-color: white;
+    font-weight: bold;
+}
+
+.winter-right>button:hover {
+    cursor: pointer;
+    background-color: rgb(12, 0, 80);
+    color: white;
+}
+
 
 
 /* RESPONSIVE */
@@ -133,15 +185,11 @@ h3 {
     .context h3 {
         font-size: 2.5rem;
         font-weight: bold;
-    }    
+    }
 
 }
 
 @media (min-width: 768px) {
-
-    .home-support ul > div {
-        display: flex;
-    }
 
     .container-suit {
         width: 100%;
@@ -182,7 +230,7 @@ h3 {
 }
 
 @media (min-width: 992px) {
-    
+
     .container-suit {
         width: 100%;
         padding-left: 4rem;
