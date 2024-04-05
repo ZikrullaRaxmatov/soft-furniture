@@ -1,4 +1,7 @@
-
+.navbar-img {
+    width: 50%;
+    object-fit: cover;
+}
 
 @media (min-width: 300px) {
 

@@ -23,7 +23,7 @@ function Home() {
                     </div>
                 </div>
                 <div class="home-support mt-3">
-                    <div class="raw d-sm-flex border border-danger">
+                    <div class="raw d-sm-flex">
                         <div class="col col-sm-6 ">
                             <div class="col-12 col-md-6 w-100 text-center">
                                 <img src={delivery} alt='delivery' />
