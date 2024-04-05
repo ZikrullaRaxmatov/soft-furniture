@@ -96,10 +96,10 @@ function Winter() {
                     <div class="row row-cols-1 row-cols-md-5 g-3 mt-2">
                         {winterCollection.map(item => (
                             <div class="col" key={item.id}>
-                                <div class="card h-100">
+                                <div class="card card-winter h-100">
                                     <img src={item.name} class="card-img-top" alt={item.id} />
                                     <div class="card-body">
-                                        <p class="card-title winter-title">{item.type}</p>
+                                        <p class="card-title winter-title ">{item.type}</p>
                                     </div>
                                 </div>
                             </div>

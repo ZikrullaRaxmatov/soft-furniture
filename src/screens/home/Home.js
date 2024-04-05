@@ -7,6 +7,7 @@ import wallet from './img/Wallet_745515.svg'
 import Winter from './Winter';
 import Autumn from './Autumn'
 import Summer from './Summer'
+import News from './News'
 
 function Home() {
 
@@ -61,6 +62,7 @@ function Home() {
             <Winter />
             <Autumn />
             <Summer />
+            <News />
         </div>
     );
 }

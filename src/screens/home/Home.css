@@ -141,7 +141,16 @@ h3 {
     font-size: 0.75rem;
 }
 
-.card:hover {
+.news-context {
+    font-size: 0.6rem;
+}
+
+.news-title {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.card-winter:hover, .card-summer:hover, .card-autumn:hover  {
     cursor: pointer;
     color: blue;
     font-weight: bold;
@@ -156,6 +165,10 @@ h3 {
 .card-summer:hover {
     color: green;
 } 
+
+.card-news {
+    box-shadow: 0 15px 15px 0 gray;
+}
 
 /* RESPONSIVE */
 
