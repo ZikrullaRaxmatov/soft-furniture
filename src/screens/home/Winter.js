@@ -78,10 +78,10 @@ function Winter() {
                             </div>
                             <div class='col-4'>
                             </div>
-                            <div class='col-12 col-lg-4 winter-right'>
+                            <div class='col-12 col-lg-4 winter-right border border-danger'>
                                 <h2>"Ferghana natural products"</h2>
                                 <p>has been a company that produces cotton fabrics for use all over the world for many years</p>
-                                <button class="btn mt-1 mt-md-2 mt-lg-3">Collection</button>
+                                <a href='#!' class="btn">Collection</a>
                             </div>
                         </div>
                     </div>

@@ -22,8 +22,8 @@ function Home() {
                 </div>
                 <div class="home-support mt-3">
                     <div class="raw d-sm-flex border border-danger">
-                        <div class="col col-sm-6 d-md-flex1">
-                            <div class="col-12 col-md-6 w-100 text-center border border-danger">
+                        <div class="col col-sm-6 ">
+                            <div class="col-12 col-md-6 w-100 text-center">
                                 <img src={delivery} alt='delivery' />
                                 <div class='home-support-context'>
                                     <h4>Free shipping</h4>
@@ -38,7 +38,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm-6 d-md-flex1">
+                        <div class="col col-sm-6">
                             <div class="col-12 col-md-6 w-100 text-center">
                                 <img src={group} alt='group' />
                                 <div>
@@ -55,21 +55,6 @@ function Home() {
                             </div>
                         </div>
                     </div>
-
-                    {/* <div class='raw d-block d-sm-flex border border-danger pt-3 mt-5'>
-                        <div class="col-12 col-sm-6 col-md-3 text-center border border-danger">
-                            
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 text-center">
-                            
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 text-center">
-                            
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 text-center">
-                            
-                        </div>
-                    </div> */}
                 </div>
             </div>
             <Winter />

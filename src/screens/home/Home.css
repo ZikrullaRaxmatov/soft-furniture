@@ -42,30 +42,22 @@ h3 {
     font-weight: bold;
 }
 
-/* .home-support-context,
-h4,
-p {
-    line-height: 1rem;
-} */
-
 .home-support h4 {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .home-support p {
     color: gray;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 /* Winter */
 
 .winter-items {
     position: relative;
-    /* margin-top: 2rem; */
     width: 100%;
     height: 70vh;
-    margin-bottom: 50px;
     border: 1px solid red;
 }
 
@@ -75,14 +67,13 @@ p {
     height: 100vh;
     object-fit: cover;
     z-index: 1;
-    top: 10%;
     left: 10%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .winter-context {
     width: 100%;
-    height: 25rem;
+    height: 50vh;
     background: linear-gradient(rgb(1, 1, 73), rgb(127, 127, 240), rgb(1, 1, 73));
     border-radius: 35px;
 }
@@ -93,29 +84,30 @@ p {
 }
 
 .winter-left>h1 {
-    margin-top: 4rem;
+    margin-top: 3rem;
     color: white;
-    font-size: 5.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .winter-left>p {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 .winter-right>h2 {
     margin-top: 2rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: white;
     font-weight: bold;
 }
 
 .winter-right>p {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: rgb(214, 212, 212);
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 
 .winter-right>button {
