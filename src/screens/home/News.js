@@ -5,9 +5,9 @@ import news3 from './img/daniel-korpai-1074289-unsplash-637x357.png'
 
 function News() {
     return (
-        <div class="news">
+        <div class="news mb-5">
             <div class="container">
-                <div class="news-items text-center mt-2 mt-md-4 mt-lg-5">
+                <div class="news-items text-center mt-2 mt-md-3 mt-lg-4">
                     <h1 class="fw-bold ">News</h1>
                     <p class="fw-light fst-italic text-muted">Ferghana Natural Product</p>
 
