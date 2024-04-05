@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import '../home/Home.css'
 import home from './img/111-copy.png'
 import group from './img/Group-995.svg'
@@ -6,6 +5,7 @@ import delivery from './img/delivery_1095359.svg'
 import guarantee from './img/guarantee_952398.svg'
 import wallet from './img/Wallet_745515.svg'
 import Winter from './Winter';
+import Autumn from './Autumn'
 
 function Home() {
 
@@ -58,6 +58,7 @@ function Home() {
                 </div>
             </div>
             <Winter />
+            <Autumn />
         </div>
     );
 }

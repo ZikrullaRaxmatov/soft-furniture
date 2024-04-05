@@ -1,15 +1,15 @@
 import React from 'react';
-import winter from './img/111.png'
-import win15 from './collection/diz-15-scaled-370x278.jpg'
-import win16 from './collection/diz-16-scaled-370x278.jpg'
-import win17 from './collection/diz-17-scaled-370x278.jpg'
-import win18 from './collection/diz-18-scaled-370x278.jpg'
-import win19 from './collection/diz-19-scaled-370x278.jpg'
-import win20 from './collection/diz-20-scaled-370x278.jpg'
-import win21 from './collection/diz-21-370x278.jpg'
-import win22 from './collection/diz-22-scaled-370x278.jpg'
-import win23 from './collection/diz-23-scaled-370x278.jpg'
-import win24 from './collection/diz-24-scaled-370x278.jpg'
+import winter from './img/111-1.png'
+import win15 from './collection/diz-41-scaled-370x278.jpg'
+import win16 from './collection/diz-42-scaled-370x278.jpg'
+import win17 from './collection/diz-43-scaled-370x278.jpg'
+import win18 from './collection/diz-44-scaled-370x278.jpg'
+import win19 from './collection/diz-45-scaled-370x278.jpg'
+import win20 from './collection/diz-46-scaled-370x278.jpg'
+import win21 from './collection/diz-47-scaled-370x278.jpg'
+import win22 from './collection/diz-48-scaled-370x278.jpg'
+import win23 from './collection/diz-49-scaled-370x278.jpg'
+import win24 from './collection/diz-50-scaled-370x278.jpg'
 
 const winterCollection = [
     {
@@ -64,13 +64,13 @@ const winterCollection = [
     },
 ]
 
-function Winter() {
+function Autumn() {
     return (
         <div class="winter">
             <div class="container">
                 <div class="winter-items">
                     <img src={winter} alt='winter' class="d-none d-lg-block" />
-                    <div class='winter-context'>
+                    <div class='autumn-bg winter-context '>
                         <div class="raw d-lg-flex ">
                             <div class='col-12 col-lg-4 winter-left'>
                                 <h1>100%</h1>
@@ -81,7 +81,7 @@ function Winter() {
                             <div class='col-12 col-lg-4 winter-right'>
                                 <h2>"Ferghana natural products"</h2>
                                 <p>has been a company that produces cotton fabrics for use all over the world for many years</p>
-                                <button class="btn">Collection</button>
+                                <button class="autum-btn btn">Collection</button>
                             </div>
                         </div>
                     </div>
@@ -89,14 +89,14 @@ function Winter() {
                 <div class="winter-collection mt-2 mt-md-3 mt-lg-5">
                     <div class="raw w-100 text-center ">
                         <div class="col ">
-                            <h1 class="fw-bold ">Winter collection</h1>
+                            <h1 class="fw-bold ">Autumn collection</h1>
                             <p class="fw-light fst-italic text-muted  ">Ferghana Natural Product</p>
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-md-5 g-3 mt-2">
                         {winterCollection.map(item => (
                             <div class="col" key={item.id}>
-                                <div class="card h-100">
+                                <div class="card-autumn card h-100">
                                     <img src={item.name} class="card-img-top" alt={item.id} />
                                     <div class="card-body">
                                         <p class="card-title winter-title">{item.type}</p>
@@ -111,4 +111,4 @@ function Winter() {
     );
 }
 
-export default Winter;
+export default Autumn;
