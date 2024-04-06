@@ -1,0 +1,83 @@
+.collection-left {
+    padding: 0.5rem;
+}
+
+.collection-left-search>.input-group {
+    margin-top: 1rem;
+}
+
+.collection-left-search>.input-group>input {
+    font-size: 0.8rem;
+}
+
+.collection-left-search>.btn-group {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.collection-left-search>.btn-group>button {
+    font-size: 0.8rem;
+    background-color: rgb(67, 67, 238) !important;
+    color: white;
+}
+
+.dropdown-link {
+    font-size: 0.8rem;
+}
+
+.dropdown-link:hover {
+    color: blue;
+}
+
+
+.collection-right {
+    padding-left: 1rem;
+}
+
+.collection-right-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    /* border: 1px solid red; */
+}
+
+.collection-right-title>div>h1 {
+    font-weight: bold;
+}
+
+.collection-right-title>.btn-group {
+    height: 2rem;
+}
+
+.collection-right-title>.btn-group>button {
+    font-size: 0.8rem;
+    background-color: rgb(67, 67, 238) !important;
+}
+
+.collection-right-images {
+    margin-top: 1.5rem;
+}
+
+.card-collection:hover {
+    cursor: pointer;
+    box-shadow: 0 20px 20px 0 rgb(67, 67, 238);
+    transition: all 0.5s ease-in-out;
+}
+
+.collection-next-btn {
+    font-size: 0.7rem;
+    background-color: transparent;
+    color: black;
+    border-color: white;
+    font-weight: bold;
+}
+
+@media (min-width: 300px) {}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
