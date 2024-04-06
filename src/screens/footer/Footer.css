@@ -1,4 +1,36 @@
 
+.footer-context {
+    font-size: 0.7rem;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list>li {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.footer-list>li:hover {
+    cursor: pointer;
+    color: rgb(3, 85, 179);
+    font-weight: bold;
+}
+
+.footer-end {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    padding-left: 3rem;
+}
+
+.footer-end > h6{
+    color: gray;
+}
+
 @media (min-width: 300px) {
 
 }
