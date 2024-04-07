@@ -21,10 +21,10 @@ function Header() {
                                 <Link class="nav-link me-4" to="/collection">Collection</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link me-4" to="#!">About Us</Link>
+                                <Link class="nav-link me-4" to="/about">About Us</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link me-4" to="#!">Contact</Link>
+                                <Link class="nav-link me-4" to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>

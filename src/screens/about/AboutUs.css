@@ -1,0 +1,39 @@
+
+.about-items {
+    display: flex;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.about-item>h1 {
+    font-weight: bold;
+}
+
+.about-item>p {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about-img>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 25px 25px 0 gray;
+}
+
+@media (min-width: 300px) {}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
