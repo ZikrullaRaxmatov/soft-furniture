@@ -5,6 +5,7 @@ import './App.css';
 import Footer from './screens/footer/Footer';
 import Collection from './screens/collection/Collection';
 import AboutUs from './screens/about/AboutUs';
+import Contact from './screens/contact/Contact';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/collection' element={<Collection />} />
         <Route path='/about' element={<AboutUs />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </div>
