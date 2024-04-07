@@ -10,6 +10,7 @@ import win21 from './collection/diz-47-scaled-370x278.jpg'
 import win22 from './collection/diz-48-scaled-370x278.jpg'
 import win23 from './collection/diz-49-scaled-370x278.jpg'
 import win24 from './collection/diz-50-scaled-370x278.jpg'
+import { Link } from 'react-router-dom';
 
 const winterCollection = [
     {
@@ -95,14 +96,16 @@ function Autumn() {
                     </div>
                     <div class="row row-cols-1 row-cols-md-5 g-3 mt-2">
                         {winterCollection.map(item => (
-                            <div class="col" key={item.id}>
-                                <div class="card-autumn card h-100">
-                                    <img src={item.name} class="card-img-top" alt={item.id} />
-                                    <div class="card-body">
-                                        <p class="card-title winter-title">{item.type}</p>
+                            <Link to={`/product/${item.id}`} >
+                                <div class="col" key={item.id}>
+                                    <div class="card-autumn card h-100">
+                                        <img src={item.name} class="card-img-top" alt={item.id} />
+                                        <div class="card-body">
+                                            <p class="card-title winter-title">{item.type}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
