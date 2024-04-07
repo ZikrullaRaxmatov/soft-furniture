@@ -11,6 +11,7 @@ import win21 from '../home/collection/diz-21-370x278.jpg'
 import win22 from '../home/collection/diz-22-scaled-370x278.jpg'
 import win23 from '../home/collection/diz-23-scaled-370x278.jpg'
 import win24 from '../home/collection/diz-24-scaled-370x278.jpg'
+import { Link } from 'react-router-dom';
 
 const winterCollection = [
     {
@@ -116,14 +117,16 @@ function Collection() {
                             <div class="collection-right-images">
                                 <div class="row row-cols-1 row-cols-md-3 g-3">
                                     {winterCollection.map(item => (
-                                        <div class="col">
-                                            <div class="card card-collection h-100 ">
-                                                <img src={item.name} class="card-img-top" alt="news1" />
-                                                <div class="card-body">
-                                                    <h6 class="card-title news-title">{item.type}</h6>
+                                        <Link to={`/product/${item.id}`}>
+                                            <div class="col">
+                                                <div class="card card-collection h-100 ">
+                                                    <img src={item.name} class="card-img-top" alt="news1" />
+                                                    <div class="card-body">
+                                                        <h6 class="card-title news-title">  {item.type} </h6>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>

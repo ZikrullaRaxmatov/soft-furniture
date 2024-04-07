@@ -72,6 +72,33 @@
     font-weight: bold;
 }
 
+/* Collection item */
+.collectionItem-items {
+    display: flex;
+    border: 1px solid red;
+}
+
+.collectionItem-img, .collectionItem-table {
+    padding: 1rem;
+}
+
+.collectionItem-img>img{
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+.collectionItem-table {
+    /* display: flex; */
+    text-align: center;
+    vertical-align: baseline;
+    /* justify-content: center;
+    align-items: center; */
+}
+
 @media (min-width: 300px) {}
 
 @media (min-width: 576px) {}

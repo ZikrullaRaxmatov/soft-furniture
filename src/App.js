@@ -6,6 +6,7 @@ import Footer from './screens/footer/Footer';
 import Collection from './screens/collection/Collection';
 import AboutUs from './screens/about/AboutUs';
 import Contact from './screens/contact/Contact';
+import CollectionItem from './screens/collection/CollectionItem';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/collection' element={<Collection />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/product/:id' element={<CollectionItem />} />
       </Routes>
       <Footer />
     </div>
