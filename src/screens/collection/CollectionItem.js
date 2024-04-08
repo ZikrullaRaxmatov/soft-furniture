@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Collection.css'
 import img from '../home/img/111.png'
 
 function CollectionItem() {
+
+    const [active, setActive] = useState("")
+
+    const handleActive = () => {
+        setActive("active")
+    }
+
     return (
         <div class="collectionItem">
             <div class="container">
@@ -48,10 +55,12 @@ function CollectionItem() {
                 <div class="collectionItem-tabs">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active " href="#!">Description</a>
+                            <button class="nav-link active">Description</button>
+                            {/* <a class="nav-link active " href="#!">Description</a> */}
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#!">Reviews </a>
+                        <button class="nav-link">Reviews (0)</button>
+                            {/* <a class="nav-link" href="#!">Reviews </a> */}
                         </li>
                     </ul>
                 </div>
