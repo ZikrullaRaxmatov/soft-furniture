@@ -79,16 +79,23 @@ function Collection() {
                                     <input type="text" class="form-control" />
                                     <span class="input-group-text"><i class="fa-solid fa-magnifying-glass text-primary"></i></span>
                                 </div>
-                                <div class="btn-group">
-                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-                                        Collection
-                                    </button>
-                                    <ul class="dropdown-menu w-100 text-center">
-                                        <li><a class="dropdown-item dropdown-link " href="#!">Spring collection</a></li>
-                                        <li><a class="dropdown-item dropdown-link" href="#!">Summer collection</a></li>
-                                        <li><a class="dropdown-item dropdown-link" href="#!">Autumn collection</a></li>
-                                        <li><a class="dropdown-item dropdown-link" href="#!">Winter collection</a></li>
-                                    </ul>
+
+                                <div class="accordion collectionItem-accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                Collection
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                            <ul class="dropdown-list">
+                                                <li><a class="dropdown-item dropdown-link " href="#!">Spring collection</a></li>
+                                                <li><a class="dropdown-item dropdown-link" href="#!">Summer collection</a></li>
+                                                <li><a class="dropdown-item dropdown-link" href="#!">Autumn collection</a></li>
+                                                <li><a class="dropdown-item dropdown-link" href="#!">Winter collection</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
