@@ -94,9 +94,6 @@
 .collectionItem-table {
     /* display: flex; */
     text-align: center;
-    vertical-align: baseline;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 @media (min-width: 300px) {}
