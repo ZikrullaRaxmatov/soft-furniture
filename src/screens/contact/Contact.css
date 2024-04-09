@@ -1,5 +1,4 @@
 .contact-items {
-    display: flex;
     margin-top: 2rem;
 }
 
@@ -41,7 +40,6 @@
 }
 
 .contact-info {
-    display: flex;
     margin-top: 2rem;
     margin-bottom: 2.5rem;
 }
@@ -84,7 +82,16 @@
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .contact-items {
+        display: flex;
+
+    }
+
+    .contact-info {
+        display: flex;
+    }
+}
 
 @media (min-width: 992px) {}
 

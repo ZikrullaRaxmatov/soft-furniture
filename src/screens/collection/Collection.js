@@ -71,8 +71,8 @@ function Collection() {
     return (
         <div class="collection mt-4 mb-4">
             <div class="container">
-                <div class="raw d-flex">
-                    <div class="col-4">
+                <div class="raw d-md-flex">
+                    <div class="col col-md-4">
                         <div class="collection-left">
                             <div class="collection-left-search">
                                 <div class="input-group">
@@ -102,7 +102,7 @@ function Collection() {
                     </div>
 
 
-                    <div class="col-8">
+                    <div class="col  col-md-8">
                         <div class="collection-right">
                             <div class="collection-right-title">
                                 <div>
@@ -122,7 +122,7 @@ function Collection() {
                             </div>
 
                             <div class="collection-right-images">
-                                <div class="row row-cols-1 row-cols-md-3 g-3">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                                     {winterCollection.map(item => (
                                         <Link to={`/product/${item.id}`}>
                                             <div class="col">

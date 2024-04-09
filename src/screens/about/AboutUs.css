@@ -1,6 +1,4 @@
-
 .about-items {
-    display: flex;
     margin-top: 2rem;
     padding: 1rem;
 }
@@ -32,7 +30,11 @@
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .about-items {
+        display: flex;
+    }
+}
 
 @media (min-width: 992px) {}
 

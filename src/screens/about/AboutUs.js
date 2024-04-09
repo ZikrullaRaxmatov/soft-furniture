@@ -6,8 +6,11 @@ function AboutUs() {
     return (
         <div class="about">
             <div class="container">
-                <div class="raw about-items">
-                    <div class="col-6 about-item">
+                <div class="raw about-items flex-row-reverse">
+                    <div class="col col-md-6 about-img" >
+                        <img src={img} alt='aboutimg' />
+                    </div>
+                    <div class="col col-md-6 about-item">
                         <h1>Ferghana  Natural Product</h1>
                         <p>Ferghana matolari, Eco sumkalar, Bukhara fabrics, Eco bagsOur factory has been a company that produces cotton fabrics for use all over the world for many years.</p>
                         <p>Ferghana matolari, Eco sumkalar, Bukhara fabrics, Eco bagsThis company has been serving customers for 17 years.</p>
@@ -21,9 +24,7 @@ function AboutUs() {
                         <p>Ferghana matolari, Eco sumkalar, Bukhara fabrics, Eco bagsIn accordance with the high demand of our customers, the company has now launched the production of high-quality premium eco-bags.</p>
                         <p>Ferghana matolari, Eco sumkalar, Bukhara fabrics, Eco bagsBukhara Natural Product Company is pleased to serve its loyal customers at any time.</p>
                     </div>
-                    <div class="col-6 about-img" >
-                        <img src={img} alt='aboutimg'/>
-                    </div>
+
                 </div>
             </div>
         </div>
