@@ -94,11 +94,11 @@ function Winter() {
                             <p className="fw-light fst-italic text-muted  ">Ferghana Natural Product</p>
                         </div>
                     </div>
-                    <div className="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 mt-2">
+                    <div className="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 mt-2" >
                         {winterCollection.map(item => (
                             <Link to={`/product/${item.id}`} >
-                                <div className="col" key={item.id}>
-                                    <div className="card card-winter h-100">
+                                <div className="col" key={item.id} >
+                                    <div className="card card-winter h-100" >
                                         <img src={item.name} className="card-img-top" alt={item.id} />
                                         <div className="card-body">
                                             <p className="card-title winter-title ">{item.type}</p>

@@ -84,7 +84,7 @@ h3 {
     object-fit: cover;
     z-index: 1;
     left: 10%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .winter-context {

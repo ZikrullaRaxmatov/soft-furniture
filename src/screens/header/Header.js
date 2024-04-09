@@ -38,9 +38,9 @@ function Header() {
                             Language
                         </button>
                         <ul className="dropdown-menu lan-menu">
-                            <li><a className="dropdown-item lan-item" href="#!"><img classNameName='rounded me-2' style={{ width: "30px" }} src={eng} alt="Eng" /> English</a></li>
-                            <li><a className="dropdown-item lan-item" href="#!"><img classNameName='rounded me-2' style={{ width: "30px" }} src={uzb} alt="Uzb" /> O'zbekcha</a></li>
-                            <li><a className="dropdown-item lan-item" href="#!"><img classNameName='rounded me-2' style={{ width: "30px" }} src={kor} alt="Kor" /> 한국어</a></li>
+                            <li><a className="dropdown-item lan-item" href="#!"><img className='rounded me-2' style={{ width: "30px" }} src={eng} alt="Eng" /> English</a></li>
+                            <li><a className="dropdown-item lan-item" href="#!"><img className='rounded me-2' style={{ width: "30px" }} src={uzb} alt="Uzb" /> O'zbekcha</a></li>
+                            <li><a className="dropdown-item lan-item" href="#!"><img className='rounded me-2' style={{ width: "30px" }} src={kor} alt="Kor" /> 한국어</a></li>
                         </ul>
                     </div>
                     <div className="telegramm">
