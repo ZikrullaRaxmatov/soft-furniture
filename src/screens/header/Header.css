@@ -1,6 +1,18 @@
 .navbar-img {
+    display: inline;
     width: 50%;
     object-fit: cover;
+}
+
+.dropdown-language {
+    position: fixed;
+    z-index: 10;
+}
+
+.lan-dropdown {
+    font-size: 0.9rem;
+    background-color: white;
+    box-shadow: 0 0 50px 1px gray;
 }
 
 .lan-dropdown,
@@ -47,12 +59,22 @@
 }
 
 
-@media (min-width: 300px) {}
+@media (min-width: 300px) {
+    .dropdown-language {
+        top: 4rem;
+        right: 1rem;
+    }
+}
 
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .dropdown-language {
+        top: 1.2rem;
+        right: 3rem;
+    }
+}
 
 @media (min-width: 1200px) {}

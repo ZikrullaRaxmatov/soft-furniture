@@ -6,9 +6,9 @@ function Footer() {
     return (
         <div class="footer">
             <div class="container">
-                <div class="raw d-flex">
+                <div class="raw d-md-flex">
                     <div class="col-md-3">
-                        <img src={sofa} alt='logo' />
+                        <img src={sofa} alt='logo' class="footer-logo" />
                         <p class="footer-context">'Ferghana Natural Product' has been a company that produces cotton fabrics for many years for use all over the world.</p>
                     </div>
                     <div class="col-md-3 p-3">

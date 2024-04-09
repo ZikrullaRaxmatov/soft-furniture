@@ -94,7 +94,7 @@ function Winter() {
                             <p class="fw-light fst-italic text-muted  ">Ferghana Natural Product</p>
                         </div>
                     </div>
-                    <div class="row row-cols-1 row-cols-md-5 g-3 mt-2">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 mt-2">
                         {winterCollection.map(item => (
                             <Link to={`/product/${item.id}`} >
                                 <div class="col" key={item.id}>

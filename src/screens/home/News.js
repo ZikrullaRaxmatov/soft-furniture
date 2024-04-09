@@ -11,7 +11,7 @@ function News() {
                     <h1 class="fw-bold ">News</h1>
                     <p class="fw-light fst-italic text-muted">Ferghana Natural Product</p>
 
-                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                         <div class="col">
                             <div class="card card-news h-100 ">
                                 <img src={news1} class="card-img-top" alt="news1" />
