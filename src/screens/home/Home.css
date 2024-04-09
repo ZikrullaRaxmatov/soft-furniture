@@ -165,6 +165,10 @@ h3 {
     font-weight: bold;
 }
 
+.card-link {
+    text-decoration: none;
+}
+
 .card-winter:hover,
 .card-summer:hover,
 .card-autumn:hover {

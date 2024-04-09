@@ -96,7 +96,7 @@ function Summer() {
                     </div>
                     <div className="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 mt-2">
                         {winterCollection.map(item => (
-                            <Link to={`/product/${item.id}`} >
+                            <Link to={`/product/${item.id}`} className='card-link' >
                                 <div className="col" key={item.id}>
                                     <div className="card-summer card h-100">
                                         <img src={item.name} className="card-img-top" alt={item.id} />

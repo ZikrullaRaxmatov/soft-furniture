@@ -15,10 +15,10 @@ function Footer() {
                     <div className="col-md-3 p-3">
                         <h6 className="text-dark fw-bold text-center">Menu</h6>
                         <ul className="footer-list">
-                            <li> <Link to={"/"}>Home</Link> </li>
-                            <li><Link to={"/about"}>About Us</Link></li>
-                            <li><Link to={"/collection"}>Collection</Link></li>
-                            <li><Link to={"/contact"}>Contacts</Link></li>
+                            <li> <Link to={"/"} className='footer-item' >Home</Link> </li>
+                            <li><Link to={"/about"} className='footer-item' >About Us</Link></li>
+                            <li><Link to={"/collection"} className='footer-item' >Collection</Link></li>
+                            <li><Link to={"/contact"} className='footer-item' >Contacts</Link></li>
                         </ul>
                     </div>
                     <div className="col-md-3 p-3">

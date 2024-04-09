@@ -12,7 +12,13 @@
     font-size: 0.8rem;
 }
 
-.footer-list>li:hover {
+.footer-item {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.footer-list>li:hover, .footer-item:hover {
     cursor: pointer;
     color: rgb(3, 85, 179);
     font-weight: bold;
