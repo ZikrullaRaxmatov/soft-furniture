@@ -69,30 +69,30 @@ const winterCollection = [
 
 function Collection() {
     return (
-        <div class="collection mt-4 mb-4">
-            <div class="container">
-                <div class="raw d-md-flex">
-                    <div class="col col-md-4">
-                        <div class="collection-left">
-                            <div class="collection-left-search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" />
-                                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass text-primary"></i></span>
+        <div className="collection mt-4 mb-4">
+            <div className="container">
+                <div className="raw d-md-flex">
+                    <div className="col col-md-4">
+                        <div className="collection-left">
+                            <div className="collection-left-search">
+                                <div className="input-group">
+                                    <input type="text" className="form-control" />
+                                    <span className="input-group-text"><i className="fa-solid fa-magnifying-glass text-primary"></i></span>
                                 </div>
 
-                                <div class="accordion collectionItem-accordion" id="accordionPanelsStayOpenExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <div className="accordion collectionItem-accordion" id="accordionPanelsStayOpenExample">
+                                    <div className="accordion-item">
+                                        <h2 className="accordion-header">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                                 Collection
                                             </button>
                                         </h2>
-                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                                            <ul class="dropdown-list">
-                                                <li><a class="dropdown-item dropdown-link " href="#!">Spring collection</a></li>
-                                                <li><a class="dropdown-item dropdown-link" href="#!">Summer collection</a></li>
-                                                <li><a class="dropdown-item dropdown-link" href="#!">Autumn collection</a></li>
-                                                <li><a class="dropdown-item dropdown-link" href="#!">Winter collection</a></li>
+                                        <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show">
+                                            <ul className="dropdown-list">
+                                                <li><a className="dropdown-item dropdown-link " href="#!">Spring collection</a></li>
+                                                <li><a className="dropdown-item dropdown-link" href="#!">Summer collection</a></li>
+                                                <li><a className="dropdown-item dropdown-link" href="#!">Autumn collection</a></li>
+                                                <li><a className="dropdown-item dropdown-link" href="#!">Winter collection</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -102,34 +102,34 @@ function Collection() {
                     </div>
 
 
-                    <div class="col  col-md-8">
-                        <div class="collection-right">
-                            <div class="collection-right-title">
+                    <div className="col  col-md-8">
+                        <div className="collection-right">
+                            <div className="collection-right-title">
                                 <div>
                                     <h1>Collection</h1>
                                     <span>Showing 1-16 of 76</span>
                                 </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                <div className="btn-group">
+                                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                                         Initial sort
                                     </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item dropdown-link" href="#!">By popularity</a></li>
-                                        <li><a class="dropdown-item dropdown-link" href="#!">By rating</a></li>
-                                        <li><a class="dropdown-item dropdown-link" href="#!">By novelty</a></li>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item dropdown-link" href="#!">By popularity</a></li>
+                                        <li><a className="dropdown-item dropdown-link" href="#!">By rating</a></li>
+                                        <li><a className="dropdown-item dropdown-link" href="#!">By novelty</a></li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="collection-right-images">
-                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                            <div className="collection-right-images">
+                                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                                     {winterCollection.map(item => (
                                         <Link to={`/product/${item.id}`}>
-                                            <div class="col">
-                                                <div class="card card-collection h-100 ">
-                                                    <img src={item.name} class="card-img-top" alt="news1" />
-                                                    <div class="card-body">
-                                                        <h6 class="card-title news-title">  {item.type} </h6>
+                                            <div className="col">
+                                                <div className="card card-collection h-100 ">
+                                                    <img src={item.name} className="card-img-top" alt="news1" />
+                                                    <div className="card-body">
+                                                        <h6 className="card-title news-title">  {item.type} </h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -138,15 +138,15 @@ function Collection() {
                                 </div>
                             </div>
 
-                            <div class="btn-toolbar mt-4 d-flex justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
-                                <div class="btn-group me-2" role="group" aria-label="First group">
-                                    <button type="button" class="btn btn-primary collection-next-btn active">1</button>
-                                    <button type="button" class="btn btn-primary collection-next-btn">2</button>
-                                    <button type="button" class="btn btn-primary collection-next-btn">3</button>
-                                    <button type="button" class="btn btn-primary collection-next-btn">4</button>
+                            <div className="btn-toolbar mt-4 d-flex justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+                                <div className="btn-group me-2" role="group" aria-label="First group">
+                                    <button type="button" className="btn btn-primary collection-next-btn active">1</button>
+                                    <button type="button" className="btn btn-primary collection-next-btn">2</button>
+                                    <button type="button" className="btn btn-primary collection-next-btn">3</button>
+                                    <button type="button" className="btn btn-primary collection-next-btn">4</button>
                                 </div>
-                                <div class="btn-group" role="group" aria-label="Third group">
-                                    <button type="button" class="btn btn-info collection-next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                                <div className="btn-group" role="group" aria-label="Third group">
+                                    <button type="button" className="btn btn-info collection-next-btn"><i className="fa-solid fa-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>

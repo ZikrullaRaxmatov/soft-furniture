@@ -4,13 +4,13 @@ import img from './aboutUs.png'
 
 function AboutUs() {
     return (
-        <div class="about">
-            <div class="container">
-                <div class="raw about-items flex-row-reverse">
-                    <div class="col col-md-6 about-img" >
+        <div className="about">
+            <div className="container">
+                <div className="raw about-items flex-row-reverse">
+                    <div className="col col-md-6 about-img" >
                         <img src={img} alt='aboutimg' />
                     </div>
-                    <div class="col col-md-6 about-item">
+                    <div className="col col-md-6 about-item">
                         <h1>Ferghana  Natural Product</h1>
                         <p>Ferghana matolari, Eco sumkalar, Bukhara fabrics, Eco bagsOur factory has been a company that produces cotton fabrics for use all over the world for many years.</p>
                         <p>Ferghana matolari, Eco sumkalar, Bukhara fabrics, Eco bagsThis company has been serving customers for 17 years.</p>

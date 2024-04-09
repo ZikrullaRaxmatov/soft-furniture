@@ -67,41 +67,41 @@ const winterCollection = [
 
 function Autumn() {
     return (
-        <div class="winter">
-            <div class="container">
-                <div class="winter-items">
-                    <img src={winter} alt='winter' class="d-none d-lg-block" />
-                    <div class='autumn-bg winter-context '>
-                        <div class="raw d-lg-flex ">
-                            <div class='col-12 col-lg-4 winter-left'>
+        <div className="winter">
+            <div className="container">
+                <div className="winter-items">
+                    <img src={winter} alt='winter' className="d-none d-lg-block" />
+                    <div className='autumn-bg winter-context '>
+                        <div className="raw d-lg-flex ">
+                            <div className='col-12 col-lg-4 winter-left'>
                                 <h1>100%</h1>
                                 <p>Material qualitiy</p>
                             </div>
-                            <div class='col-4'>
+                            <div className='col-4'>
                             </div>
-                            <div class='col-12 col-lg-4 winter-right'>
+                            <div className='col-12 col-lg-4 winter-right'>
                                 <h2>"Ferghana natural products"</h2>
                                 <p>has been a company that produces cotton fabrics for use all over the world for many years</p>
-                                <button class="autum-btn btn">Collection</button>
+                                <button className="autum-btn btn">Collection</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="winter-collection mt-2 mt-md-3 mt-lg-5">
-                    <div class="raw w-100 text-center ">
-                        <div class="col ">
-                            <h1 class="fw-bold ">Autumn collection</h1>
-                            <p class="fw-light fst-italic text-muted  ">Ferghana Natural Product</p>
+                <div className="winter-collection mt-2 mt-md-3 mt-lg-5">
+                    <div className="raw w-100 text-center ">
+                        <div className="col ">
+                            <h1 className="fw-bold ">Autumn collection</h1>
+                            <p className="fw-light fst-italic text-muted  ">Ferghana Natural Product</p>
                         </div>
                     </div>
-                    <div class="row row-cols-1  row-cols-md-3 row-cols-lg-5 g-3 mt-2">
+                    <div className="row row-cols-1  row-cols-md-3 row-cols-lg-5 g-3 mt-2">
                         {winterCollection.map(item => (
                             <Link to={`/product/${item.id}`} >
-                                <div class="col" key={item.id}>
-                                    <div class="card-autumn card h-100">
-                                        <img src={item.name} class="card-img-top" alt={item.id} />
-                                        <div class="card-body">
-                                            <p class="card-title winter-title">{item.type}</p>
+                                <div className="col" key={item.id}>
+                                    <div className="card-autumn card h-100">
+                                        <img src={item.name} className="card-img-top" alt={item.id} />
+                                        <div className="card-body">
+                                            <p className="card-title winter-title">{item.type}</p>
                                         </div>
                                     </div>
                                 </div>

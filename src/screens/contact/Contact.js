@@ -8,40 +8,40 @@ import map from './ferghanaMap.jpg'
 
 function Contact() {
     return (
-        <div class="contact">
-            <div class="container">
-                <div class="raw contact-items">
-                    <div class="col col-md-6 contact-form">
+        <div className="contact">
+            <div className="container">
+                <div className="raw contact-items">
+                    <div className="col col-md-6 contact-form">
                         <h1>Contact</h1>
-                        <div class="contact-form-items">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                        <div className="contact-form-items">
+                            <label for="exampleFormControlInput1" className="form-label">Email address</label>
+                            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                         </div>
-                        <div class="contact-form-items">
-                            <label for="exampleFormControlInput2" class="form-label">Phone number</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Phone number" />
+                        <div className="contact-form-items">
+                            <label for="exampleFormControlInput2" className="form-label">Phone number</label>
+                            <input type="text" className="form-control" id="exampleFormControlInput2" placeholder="Phone number" />
                         </div>
-                        <div class="contact-form-items">
-                            <label for="exampleFormControlTextarea1" class="form-label">Your message here</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message here" ></textarea>
+                        <div className="contact-form-items">
+                            <label for="exampleFormControlTextarea1" className="form-label">Your message here</label>
+                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message here" ></textarea>
                         </div>
-                        <div class="contact-form-btn">
-                            <button class="btn btn-primary">Submit</button>
+                        <div className="contact-form-btn">
+                            <button className="btn btn-primary">Submit</button>
                         </div>
                     </div>
-                    <div class="col col-md-6 contact-map">
+                    <div className="col col-md-6 contact-map">
                         <img src={map} alt='map' />
                     </div>
                 </div>
-                <div class="raw contact-info">
-                    <div class="col col-md-4 contact-info-context">
-                        <img src={email} alt='email' class="contact-email" />
+                <div className="raw contact-info">
+                    <div className="col col-md-4 contact-info-context">
+                        <img src={email} alt='email' className="contact-email" />
                         <div>
                             <h1>Email:</h1>
                             <p>info@ferghanafabric.uz</p>
                         </div>
                     </div>
-                    <div class="col col-md-4 contact-info-context">
+                    <div className="col col-md-4 contact-info-context">
                         <img src={phone} alt='email' />
                         <div>
                             <h1>Tel:</h1>
@@ -49,7 +49,7 @@ function Contact() {
                                 +998 93 960 78 00</p>
                         </div>
                     </div>
-                    <div class="col col-md-4 contact-info-context">
+                    <div className="col col-md-4 contact-info-context">
                         <img src={location} alt='email' />
                         <div>
                             <h1>Location:</h1>

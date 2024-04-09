@@ -12,41 +12,41 @@ import News from './News'
 function Home() {
 
     return (
-        <div class="home">
-            <div class="container-suit">
-                <div class="home-items ">
+        <div className="home">
+            <div className="container-suit">
+                <div className="home-items ">
                     <img src={home} alt='home' />
-                    <div class="context">
+                    <div className="context">
                         <h3>Ferghana</h3>
                         <h2>Natural</h2>
                         <h1>Products</h1>
                     </div>
                 </div>
-                <div class="raw home-support">
-                    <div class="col-12 col-md-3  home-support-item">
+                <div className="raw home-support">
+                    <div className="col-12 col-md-3  home-support-item">
                         <img src={delivery} alt='delivery' />
-                        <div class='home-support-context'>
+                        <div className='home-support-context'>
                             <h4>Free shipping</h4>
                             <p>Free shipping on all orders</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3  home-support-item">
+                    <div className="col-12 col-md-3  home-support-item">
                         <img src={guarantee} alt='guarantee' />
-                        <div class='home-support-context'>
+                        <div className='home-support-context'>
                             <h4>Return Guarantee</h4>
                             <p>30 day money back</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3  home-support-item">
+                    <div className="col-12 col-md-3  home-support-item">
                         <img src={group} alt='group' />
-                        <div class='home-support-context'>
+                        <div className='home-support-context'>
                             <h4>Online support 24/7</h4>
                             <p>Technical support 24/7</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3  home-support-item">
+                    <div className="col-12 col-md-3  home-support-item">
                         <img src={wallet} alt='wallet' />
-                        <div class='home-support-context'>
+                        <div className='home-support-context'>
                             <h4>Secure payment</h4>
                             <p>All payment methods accepted</p>
                         </div>
