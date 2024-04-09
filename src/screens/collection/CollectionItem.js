@@ -66,6 +66,8 @@ const winterCollection = [
     },
 ]
 
+console.log(winterCollection);
+
 function CollectionItem() {
 
     const { itemId } = useParams()
