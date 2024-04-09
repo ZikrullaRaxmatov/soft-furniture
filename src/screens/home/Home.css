@@ -42,6 +42,21 @@ h3 {
     font-weight: bold;
 }
 
+.home-support {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.home-support-item {
+    display: flex;
+    justify-content: center;
+}
+
+.home-support-context {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
 .home-support h4 {
     font-weight: bold;
     font-size: 0.8rem;
@@ -50,6 +65,7 @@ h3 {
 .home-support p {
     color: gray;
     font-size: 0.6rem;
+
 }
 
 /* Winter */
@@ -149,7 +165,9 @@ h3 {
     font-weight: bold;
 }
 
-.card-winter:hover, .card-summer:hover, .card-autumn:hover  {
+.card-winter:hover,
+.card-summer:hover,
+.card-autumn:hover {
     cursor: pointer;
     color: blue;
     font-weight: bold;
@@ -163,7 +181,7 @@ h3 {
 
 .card-summer:hover {
     color: green;
-} 
+}
 
 .card-news {
     box-shadow: 0 15px 15px 0 gray;

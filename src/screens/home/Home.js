@@ -22,8 +22,40 @@ function Home() {
                         <h1>Products</h1>
                     </div>
                 </div>
-                <div class="home-support mt-3">
-                    <div class="raw d-sm-flex">
+                {/* <div class="home-support mt-3"> */}
+                <div class="raw home-support">
+                    <div class="col-3 home-support-item">
+                        <img src={delivery} alt='delivery' />
+                        <div class='home-support-context'>
+                            <h4>Free shipping</h4>
+                            <p>Free shipping on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-3 home-support-item">
+                        <img src={guarantee} alt='guarantee' />
+                        <div class='home-support-context'>
+                            <h4>Return Guarantee</h4>
+                            <p>30 day money back</p>
+                        </div>
+                    </div>
+                    <div class="col-3 home-support-item">
+                        <img src={group} alt='group' />
+                        <div class='home-support-context'>
+                            <h4>Online support 24/7</h4>
+                            <p>Technical support 24/7</p>
+                        </div>
+                    </div>
+                    <div class="col-3 home-support-item">
+                        <img src={wallet} alt='wallet' />
+                        <div class='home-support-context'>
+                            <h4>Secure payment</h4>
+                            <p>All payment methods accepted</p>
+                        </div>
+                    </div>
+
+                    {/* </div> */}
+
+                    {/* <div class="raw d-sm-flex">
                         <div class="col col-sm-6 ">
                             <div class="col-12 col-md-6 w-100 text-center">
                                 <img src={delivery} alt='delivery' />
@@ -56,7 +88,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Winter />
