@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Collection.css'
-import img from '../home/img/111.png'
+import img from '../home/collection/diz-23-scaled.jpg'
 import win15 from '../home/collection/diz-15-scaled-370x278.jpg'
 import win16 from '../home/collection/diz-16-scaled-370x278.jpg'
 import win17 from '../home/collection/diz-17-scaled-370x278.jpg'
@@ -91,16 +91,14 @@ function CollectionItem() {
             <div class="container">
                 <div class="raw collectionItem-items">
                     <div class="col-7 collectionItem-img">
-                        {/* {
-                            winterCollection.map(item => {
-                                if (item.id === itemId) {
-                                    return <img src={item.id} alt='...' key={item.id} />
-                                } else {
-                                    return <img src={img} alt='...' key={item.id} />
-                                }
+                        {/* {winterCollection.map(item => {
+                            if (item.id === itemId) {
+                                return <img src={item.id} alt='...' key={item.id} />
+                            } else {
+                                return <img src={img} alt='...' key={item.id} />
                             }
+                        }
                         )} */}
-
                         <img src={img} alt='...' />
                     </div>
                     <div class="col-5 collectionItem-table">
@@ -194,33 +192,33 @@ function CollectionItem() {
                     <div class="row row-cols-1 row-cols-md-4 g-3">
                         <div class="col">
                             <div class="card card-collection h-100 ">
-                                <img src={img} class="card-img-top" alt="news1" />
+                                <img src={win15} class="card-img-top" alt="news1" />
                                 <div class="card-body">
-                                    <h6 class="card-title news-title"> Title </h6>
+                                    <h6 class="card-title news-title"> Squares </h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card card-collection h-100 ">
-                                <img src={img} class="card-img-top" alt="news1" />
+                                <img src={win20} class="card-img-top" alt="news1" />
                                 <div class="card-body">
-                                    <h6 class="card-title news-title"> Title </h6>
+                                    <h6 class="card-title news-title"> Bambi </h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card card-collection h-100 ">
-                                <img src={img} class="card-img-top" alt="news1" />
+                                <img src={win17} class="card-img-top" alt="news1" />
                                 <div class="card-body">
-                                    <h6 class="card-title news-title"> Title </h6>
+                                    <h6 class="card-title news-title"> Circles </h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card card-collection h-100 ">
-                                <img src={img} class="card-img-top" alt="news1" />
+                                <img src={win24} class="card-img-top" alt="news1" />
                                 <div class="card-body">
-                                    <h6 class="card-title news-title"> Title </h6>
+                                    <h6 class="card-title news-title"> Lavender roses </h6>
                                 </div>
                             </div>
                         </div>
