@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'
 import sofa from '../header/sofa-logo.png'
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -14,10 +15,10 @@ function Footer() {
                     <div class="col-md-3 p-3">
                         <h6 class="text-dark fw-bold text-center">Menu</h6>
                         <ul class="footer-list">
-                            <li>Home</li>
-                            <li>About Us</li>
-                            <li>Collection</li>
-                            <li>Contacts</li>
+                            <li> <Link to={"/"}>Home</Link> </li>
+                            <li><Link to={"/about"}>About Us</Link></li>
+                            <li><Link to={"/collection"}>Collection</Link></li>
+                            <li><Link to={"/contact"}>Contacts</Link></li>
                         </ul>
                     </div>
                     <div class="col-md-3 p-3">

@@ -85,10 +85,6 @@
 }
 
 /* Collection item */
-.collectionItem-items {
-    display: flex;
-    
-}
 
 .collectionItem-img,
 .collectionItem-table {
@@ -97,11 +93,11 @@
 
 .collectionItem-img>img {
     width: 100%;
-    height: 32rem;
+    height: 20rem;
     object-fit: cover;
     border-radius: 2rem;
     cursor: pointer;
-    
+
 }
 
 .collectionItem-table {
@@ -168,13 +164,7 @@
     font-weight: bold;
 }
 
-.collectionItem-reviews>form {
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-
 .collectionItem-reviews-form {
-    display: flex;
     justify-content: center;
 }
 
@@ -194,7 +184,7 @@
 }
 
 .collectionItem-reviews-feedback>div {
-padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .collectionItem-reviews-feedback>div>textarea {
@@ -204,10 +194,9 @@ padding: 0.5rem;
 }
 
 .collectionItem-reviews>form>div {
-    display: flex;
     justify-content: end;
     padding: 0.5rem;
-    
+
 }
 
 .collectionItem-similar-products {
@@ -225,11 +214,34 @@ padding: 0.5rem;
     font-weight: bold;
 }
 
+.collectionItem-submit {
+    display: flex;
+    justify-content: end;
+}
+
 @media (min-width: 300px) {}
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .collectionItem-items {
+        display: flex;
+    }
+
+    .collectionItem-img {
+        height: 20rem;
+    }
+
+    .collectionItem-reviews-form {
+        display: flex;
+    }
+
+    .collectionItem-reviews>form {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+}
 
 @media (min-width: 992px) {}
 

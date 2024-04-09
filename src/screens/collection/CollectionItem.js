@@ -92,7 +92,7 @@ function CollectionItem() {
         <div class="collectionItem">
             <div class="container">
                 <div class="raw collectionItem-items">
-                    <div class="col-7 collectionItem-img">
+                    <div class="col col-md-7 collectionItem-img">
                         {/* {winterCollection.map(item => {
                             if (item.id === itemId) {
                                 return <img src={item.id} alt='...' key={item.id} />
@@ -103,7 +103,7 @@ function CollectionItem() {
                         )} */}
                         <img src={img} alt='...' />
                     </div>
-                    <div class="col-5 collectionItem-table">
+                    <div class="col col-md-5 collectionItem-table">
                         <h1>Byzantium</h1>
                         <table class="table table-striped-columns">
                             <tbody>
@@ -167,22 +167,22 @@ function CollectionItem() {
 
                         <form>
                             <div class="raw collectionItem-reviews-form">
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <label htmlFor="name" class="form-label text-muted">Name *</label>
                                     <input type="text" class="form-control" id="name" />
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <label htmlFor="email" class="form-label text-muted">Email *</label>
                                     <input type="text" class="form-control" id="email" />
                                 </div>
                             </div>
                             <div class="raw collectionItem-reviews-feedback">
-                                <div class="col">
+                                <div class="col-12">
                                     <label htmlFor="feedback" class="form-label text-muted">Feedback *</label>
                                     <textarea type="text" class="form-control" id="feedback" />
                                 </div>
                             </div>
-                            <div>
+                            <div class="collectionItem-submit">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
