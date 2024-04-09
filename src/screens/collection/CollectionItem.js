@@ -1,13 +1,89 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Collection.css'
 import img from '../home/img/111.png'
+import win15 from '../home/collection/diz-15-scaled-370x278.jpg'
+import win16 from '../home/collection/diz-16-scaled-370x278.jpg'
+import win17 from '../home/collection/diz-17-scaled-370x278.jpg'
+import win18 from '../home/collection/diz-18-scaled-370x278.jpg'
+import win19 from '../home/collection/diz-19-scaled-370x278.jpg'
+import win20 from '../home/collection/diz-20-scaled-370x278.jpg'
+import win21 from '../home/collection/diz-21-370x278.jpg'
+import win22 from '../home/collection/diz-22-scaled-370x278.jpg'
+import win23 from '../home/collection/diz-23-scaled-370x278.jpg'
+import win24 from '../home/collection/diz-24-scaled-370x278.jpg'
+import { useParams } from "react-router-dom";
+
+const winterCollection = [
+    {
+        id: "15",
+        name: win15,
+        type: "Squares"
+    },
+    {
+        id: "16",
+        name: win16,
+        type: "Ikat"
+    },
+    {
+        id: "17",
+        name: win17,
+        type: "Circles"
+    },
+    {
+        id: "18",
+        name: win18,
+        type: "Geometry blue"
+    },
+    {
+        id: "19",
+        name: win19,
+        type: "Tropical leaves"
+    },
+    {
+        id: "20",
+        name: win20,
+        type: "Bambi"
+    },
+    {
+        id: "21",
+        name: win21,
+        type: "Byzantium"
+    },
+    {
+        id: "22",
+        name: win22,
+        type: "Evening garden"
+    },
+    {
+        id: "23",
+        name: win23,
+        type: "Feather Marquis"
+    },
+    {
+        id: "24",
+        name: win24,
+        type: "Lavender roses"
+    },
+]
 
 function CollectionItem() {
 
-    const [active, setActive] = useState("")
+    const { itemId } = useParams()
+    const [activeDesc, setActiveDesc] = useState(true)
+    const [activeReviw, setActiveReviw] = useState(false)
 
-    const handleActive = () => {
-        setActive("active")
+    useEffect(() => {
+        console.log(itemId);
+    }, [itemId])
+
+    const handleActiveDesc = () => {
+        setActiveDesc(true)
+        setActiveReviw(false)
+    }
+
+    const handleActiveReview = () => {
+        setActiveDesc(false)
+        setActiveReviw(true)
     }
 
     return (
@@ -15,6 +91,16 @@ function CollectionItem() {
             <div class="container">
                 <div class="raw collectionItem-items">
                     <div class="col-7 collectionItem-img">
+                        {/* {
+                            winterCollection.map(item => {
+                                if (item.id === itemId) {
+                                    return <img src={item.id} alt='...' key={item.id} />
+                                } else {
+                                    return <img src={img} alt='...' key={item.id} />
+                                }
+                            }
+                        )} */}
+
                         <img src={img} alt='...' />
                     </div>
                     <div class="col-5 collectionItem-table">
@@ -55,23 +141,23 @@ function CollectionItem() {
                 <div class="collectionItem-tabs">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <button class="nav-link active">Description</button>
+                            <button class={activeDesc ? "nav-link active" : "nav-link"} onClick={() => handleActiveDesc()} >Description</button>
                             {/* <a class="nav-link active " href="#!">Description</a> */}
                         </li>
                         <li class="nav-item">
-                        <button class="nav-link">Reviews (0)</button>
+                            <button class={activeReviw ? "nav-link active" : "nav-link"} onClick={() => handleActiveReview()} >Reviews (0)</button>
                             {/* <a class="nav-link" href="#!">Reviews </a> */}
                         </li>
                     </ul>
                 </div>
                 <div class="container">
-                    <div class="collectionItem-description d-none">
+                    <div class={`collectionItem-description ${activeDesc ? "" : "d-none"}`}>
                         <h1>Description</h1>
                         <span>Bed linen set Byzantium</span>
                         <p>Bed linen is a household item and bedroom decor designed for comfort and beauty. You can choose from a variety of bed sets that include sheets, blankets, pillow crafts and other accessories. They have various designs, prints, embroideries or other design elements. They are easy and quick to clean and clean. They are made from soft materials and they make your bedrooms cozy and cozy.</p>
                     </div>
 
-                    <div class="collectionItem-reviews">
+                    <div class={`collectionItem-reviews ${activeReviw ? "" : "d-none"}`}>
                         <h1>Reviews</h1>
                         <span>There is no review yet!</span>
 
