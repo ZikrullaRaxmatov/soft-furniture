@@ -129,7 +129,7 @@ function Collection() {
                             <div className="collection-right-images">
                                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                                     {winterCollection.map(item => (
-                                        <Link to={`/product/${item.id}`}>
+                                        <Link to={`/product/${item.id}`} className='collection-link'>
                                             <div className="col">
                                                 <div className="card card-collection h-100 ">
                                                     <img src={item.name} className="card-img-top" alt="news1" />
