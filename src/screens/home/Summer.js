@@ -11,6 +11,7 @@ import win22 from './collection/diz-71-scaled-370x278.jpg'
 import win23 from './collection/diz-72-scaled-370x278.jpg'
 import win24 from './collection/diz-73-scaled-370x278.jpg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const winterCollection = [
     {
@@ -66,6 +67,10 @@ const winterCollection = [
 ]
 
 function Summer() {
+
+    // eslint-disable-next-line
+    const [t, i18n] = useTranslation("global")
+
     return (
         <div className="winter">
             <div className="container">
@@ -75,14 +80,14 @@ function Summer() {
                         <div className="raw d-lg-flex ">
                             <div className='col-12 col-lg-4 winter-left'>
                                 <h1>100%</h1>
-                                <p>Material qualitiy</p>
+                                <p>{t("allSeason.quality")}</p>
                             </div>
                             <div className='col-4'>
                             </div>
                             <div className='col-12 col-lg-4 winter-right'>
                                 <h2>"Ferghana natural products"</h2>
-                                <p>has been a company that produces cotton fabrics for use all over the world for many years</p>
-                                <button className="summer-btn btn">Collection</button>
+                                <p>{t("allSeason.subtitle")}</p>
+                                <button className="summer-btn btn">{t("allSeason.btn")}</button>
                             </div>
                         </div>
                     </div>
@@ -90,7 +95,7 @@ function Summer() {
                 <div className="winter-collection mt-2 mt-md-3 mt-lg-5">
                     <div className="raw w-100 text-center ">
                         <div className="col ">
-                            <h1 className="fw-bold ">Summer collection</h1>
+                            <h1 className="fw-bold ">{t("allSeason.summer")}</h1>
                             <p className="fw-light fst-italic text-muted  ">Ferghana Natural Product</p>
                         </div>
                     </div>

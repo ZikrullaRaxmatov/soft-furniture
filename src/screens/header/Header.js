@@ -6,8 +6,16 @@ import telegram from './imgs/telegram-icon.png'
 import eng from './imgs/flag-eng.jpg'
 import uzb from './imgs/flag-uzb.png'
 import kor from './imgs/flag-kor.png'
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+
+    const [t, i18n] = useTranslation("global")
+
+    const changeLanguage = (lan) => {
+        i18n.changeLanguage(lan)
+    }
+
     return (
         <div className="header ">
             <nav className="navbar navbar-expand-md">
@@ -20,31 +28,31 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mb-2 mb-lg-0 p-2">
                             <li className="nav-item">
-                                <Link className="nav-link me-4" to="/">Home</Link>
+                                <Link className="nav-link me-4" to="/">{t("header.home")}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link me-4" to="/collection">Collection</Link>
+                                <Link className="nav-link me-4" to="/collection">{t("header.collection")}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link me-4" to="/about">About Us</Link>
+                                <Link className="nav-link me-4" to="/about">{t("header.about")}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link me-4" to="/contact">Contact</Link>
+                                <Link className="nav-link me-4" to="/contact">{t("header.contact")}</Link>
                             </li>
                         </ul>
                     </div>
                     <div className="dropdown dropdown-language ">
                         <button className="btn btn-secondary1 lan-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Language
+                        {t("header.language")}
                         </button>
                         <ul className="dropdown-menu lan-menu">
-                            <li><a className="dropdown-item lan-item" href="#!"><img className='rounded me-2' style={{ width: "30px" }} src={eng} alt="Eng" /> English</a></li>
-                            <li><a className="dropdown-item lan-item" href="#!"><img className='rounded me-2' style={{ width: "30px" }} src={uzb} alt="Uzb" /> O'zbekcha</a></li>
-                            <li><a className="dropdown-item lan-item" href="#!"><img className='rounded me-2' style={{ width: "30px" }} src={kor} alt="Kor" /> 한국어</a></li>
+                            <li><a className="dropdown-item lan-item" href="#english" onClick={() => changeLanguage("en")} ><img className='rounded me-2' style={{ width: "30px" }} src={eng} alt="Eng" /> English</a></li>
+                            <li><a className="dropdown-item lan-item" href="#uzbek" onClick={() => changeLanguage("uz")} ><img className='rounded me-2' style={{ width: "30px" }} src={uzb} alt="Uzb" /> O'zbekcha</a></li>
+                            <li><a className="dropdown-item lan-item" href="#korean" onClick={() => changeLanguage("ko")} ><img className='rounded me-2' style={{ width: "30px" }} src={kor} alt="Kor" /> 한국어</a></li>
                         </ul>
                     </div>
                     <div className="telegramm">
-                        <span className="tg-msg">Write us</span>
+                        <span className="tg-msg">{t("header.writeUs")}</span>
                         <div className="tg-contact">
                             <Link to={"/contact"} > <img src={telegram} alt='tg' className="tg-img " /> </Link>
                         </div>

@@ -1,0 +1,40 @@
+{
+
+    "header": {
+        "home": "Bosh sahifa",
+        "collection": "Kolleksiya",
+        "about": "Biz haqimizda",
+        "contact": "Bog'lanish",
+        "language": "Til",
+        "writeUs": "Bizga yozing"
+    },
+
+    "home": {
+        "title1": "Bepul yetkazib berish",
+        "subtitle1": "Barcha buyurtmalarga bepul yetkazib berish",
+        "title2": "Qaytarish kafolati",
+        "subtitle2": "30 kunlik pulni qaytarish",
+        "title3": "Onlayn qo'llab-quvvatlash 24/7",
+        "subtitle3": "Texnik qo'llab-quvvatlash 24/7",
+        "title4": "Xavfsiz to'lov",
+        "subtitle4": "Barcha to'lov usullari qabul qilindi"
+    },
+
+    "allSeason": {
+        "autumn": "Kuz kolleksiyasi",
+        "winter": "Qish kolleksiyasi",
+        "summer": "Yoz kolleksiyasi",
+        "quality": "Material sifati",
+        "btn": "Kolleksiya",
+        "subtitle": "ko'plab yillar davomida dunyodagi barcha zonasida ishlatiladigan paxta o'zining sifatli materiallarini ishlab chiqaruvchi kompaniya bo'lib kelmoqda"
+    },
+    
+    "news": {
+        "title": "Yangiliklar",
+        "title1": "Yaxshi qurilmalarni tanlashning qanday yo'llari",
+        "subtitle1": "Bu qo'llanma qisqacha ko'rsatilgan matnga qo'llanma qisqacha ko'rsatilgan matnga qo'llanma"
+    }
+    
+    
+
+}

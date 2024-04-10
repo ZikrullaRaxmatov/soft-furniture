@@ -8,8 +8,12 @@ import Winter from './Winter';
 import Autumn from './Autumn'
 import Summer from './Summer'
 import News from './News'
+import { useTranslation } from 'react-i18next'
 
 function Home() {
+
+    // eslint-disable-next-line
+    const [t, i18n] = useTranslation("global")
 
     return (
         <div className="home">
@@ -26,29 +30,29 @@ function Home() {
                     <div className="col-12 col-md-3  home-support-item">
                         <img src={delivery} alt='delivery' />
                         <div className='home-support-context'>
-                            <h4>Free shipping</h4>
-                            <p>Free shipping on all orders</p>
+                            <h4>{t("home.title1")}</h4>
+                            <p>{t("home.subtitle1")}</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-3  home-support-item">
                         <img src={guarantee} alt='guarantee' />
                         <div className='home-support-context'>
-                            <h4>Return Guarantee</h4>
-                            <p>30 day money back</p>
+                            <h4>{t("home.title2")}</h4>
+                            <p>{t("home.subtitle2")}</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-3  home-support-item">
                         <img src={group} alt='group' />
                         <div className='home-support-context'>
-                            <h4>Online support 24/7</h4>
-                            <p>Technical support 24/7</p>
+                            <h4>{t("home.title3")}</h4>
+                            <p>{t("home.subtitle3")}</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-3  home-support-item">
                         <img src={wallet} alt='wallet' />
                         <div className='home-support-context'>
-                            <h4>Secure payment</h4>
-                            <p>All payment methods accepted</p>
+                            <h4>{t("home.title4")}</h4>
+                            <p>{t("home.subtitle4")}</p>
                         </div>
                     </div>
                 </div>

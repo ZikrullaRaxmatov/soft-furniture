@@ -2,8 +2,13 @@ import React from 'react';
 import './Footer.css'
 import sofa from '../header/sofa-logo.png'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+
+    // eslint-disable-next-line
+    const [t, i18n] = useTranslation("global")
+
     return (
         <div className="footer">
             <div className="container">

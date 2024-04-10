@@ -1,0 +1,35 @@
+{
+    "header": {
+        "home": "Home",
+        "collection": "Collection",
+        "about": "About Us",
+        "contact": "Contact",
+        "language": "Language",
+        "writeUs": "Write us"
+    },
+    "home": {
+        "title1": "Free shipping",
+        "subtitle1": "Free shipping on all orders",
+        "title2": "Return Guarantee",
+        "subtitle2": "30 day money back",
+        "title3": "Online support 24/7",
+        "subtitle3": "Technical support 24/7",
+        "title4": "Secure payment",
+        "subtitle4": "All payment methods accepted"
+    },
+    
+    "allSeason": {
+        "autumn": "Autumn collection",
+        "winter": "Winter collection",
+        "summer": "Summer collection",
+        "qualitiy": "Material qualitiy",
+        "btn": "Collection",
+        "subtitle": "has been a company that produces cotton fabrics for use all over the world for many years"
+    },
+
+    "news": {
+        "title": "News",
+        "title1": "How to choose perfect gadgets",
+        "subtitle1": "This is a longer card with supporting text below as a natural lead-in to additional content. "
+    }
+}
