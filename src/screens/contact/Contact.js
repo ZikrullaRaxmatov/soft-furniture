@@ -18,11 +18,11 @@ function Contact() {
     const chat_id = "755982207"
     const token = "7124709406:AAEuYY7m0GCQtcopulUdH2WesRL0VvrK1XI"
 
-    const submit = () => {
+    const submit = async () => {
         // e.preventDefault()
 
         if (phone && email && message) {
-            fetch(`https://api.telegram.org/bot${token}/sendmessage`, {
+            await fetch(`https://api.telegram.org/bot${token}/sendmessage`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
