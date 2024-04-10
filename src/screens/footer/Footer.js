@@ -15,19 +15,19 @@ function Footer() {
                 <div className="raw d-md-flex">
                     <div className="col-md-3">
                         <img src={sofa} alt='logo' className="footer-logo" />
-                        <p className="footer-context">'Ferghana Natural Product' has been a company that produces cotton fabrics for many years for use all over the world.</p>
+                        <p className="footer-context">{t("footer.subtitle")}</p>
                     </div>
                     <div className="col-md-3 p-3">
-                        <h6 className="text-dark fw-bold text-center">Menu</h6>
+                        <h6 className="text-dark fw-bold text-center">{t("footer.title1")}</h6>
                         <ul className="footer-list">
-                            <li> <Link to={"/"} className='footer-item' >Home</Link> </li>
-                            <li><Link to={"/about"} className='footer-item' >About Us</Link></li>
-                            <li><Link to={"/collection"} className='footer-item' >Collection</Link></li>
-                            <li><Link to={"/contact"} className='footer-item' >Contacts</Link></li>
+                            <li> <Link to={"/"} className='footer-item' >{t("footer.home")}</Link> </li>
+                            <li><Link to={"/about"} className='footer-item' >{t("footer.about")}</Link></li>
+                            <li><Link to={"/collection"} className='footer-item' >{t("footer.collection")}</Link></li>
+                            <li><Link to={"/contact"} className='footer-item' >{t("footer.contact")}</Link></li>
                         </ul>
                     </div>
                     <div className="col-md-3 p-3">
-                        <h6 className="text-dark fw-bold text-center">Contact</h6>
+                        <h6 className="text-dark fw-bold text-center">{t("footer.title2")}</h6>
                         <ul className="footer-list">
                             <li>Ferghana, st. Alpomysh 80.</li>
                             <li>Bnpuz@bk.ru</li>
@@ -36,13 +36,13 @@ function Footer() {
                         </ul>
                     </div>
                     <div className="col-md-3 p-3">
-                        <h6 className="text-dark fw-bold text-center">Subscribe</h6>
+                        <h6 className="text-dark fw-bold text-center">{t("footer.title3")}</h6>
                         <button className="btn btn-danger rounded-pill w-100 mt-4">Subscribe</button>
                     </div>
                 </div>
             </div>
             <div className="footer-end">
-                <h6>© 2024 LLC "FERGHANA NATURAL PRODUCT". All rights reserved.</h6>
+                <h6>© 2024 LLC "FERGHANA NATURAL PRODUCT". {t("footer.private")}.</h6>
             </div>
         </div>
     );
