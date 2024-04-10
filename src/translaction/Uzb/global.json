@@ -82,6 +82,30 @@
         "similar": "O'xshash mahsulotlar"
     },
     
+    "about": {
+        "desc1": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Bizning zavod bir necha yillar davomida butun dunyo bo'ylab ishlatiladigan paxta materiallarini ishlab chiqaruvchi kompaniya bo'lib kelgan.",
+        "desc2": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Bu kompaniya 17 yil muvofaqiyatli mijozlarga xizmat ko'rsatmoqda.",
+        "desc3": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Kompaniyaning asosiy maqsadi yuqori sifatli va moliyaviy ravishda samarali mahsulotlarni ishlab chiqarishdir.",
+        "desc4": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Ushbu kompaniyaning ishlab chiqarish jarayoni butunlay ekologik ravishda olib boriladi.",
+        "desc5": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Kompaniya mijozlar tomonidan so'rovlarga va takliflarga binoan istalgan turdagi paxta xomashyolarini ishlab chiqarishi mumkin.",
+        "desc6": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Kompaniya O'zbekistonda DongJia texnika mashinalarining rasmiy dileridir.",
+        "desc7": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Joriyda 80 dan ortiq oila kompaniyani prestijiga va muvaffaqiyatiga hissadan hissa qo'shib, o'z oilalariga moliyaviy yordam ko'rsatmoqda.",
+        "desc8": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Ushbu talabni qondirish uchun, 50 to'qima yuqori tezlikda va to'xtamay ishlaydi.",
+        "desc9": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Biz 200-250,000 metrgacha paxta materialini har oy ishlab chiqarishimiz mumkin.",
+        "desc10": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Mijozlarimizning yuqori talabiga muvofiq, kompaniya endi yuqori sifatli premium ekologik sumkalar ishlab chiqarishni boshladi.",
+        "desc11": "Farg'ona materiallari, Ekologik sumkalar, Buxoro paxtasi, Ekologik sumkalar Buxoro Tabiiy Mahsulot Kompaniyasi har doim, sog'lig'iga baxtli mijozlarini xizmat qilishdan mamnun bo'ladi."
+    },
+
+    "contact": {
+        "contact": "Aloqa",
+        "email": "Elektron pochta",
+        "phone": "Telefon raqami",
+        "message": "Xabaringizni qoldiring",
+        "submit": "Yuborish",
+        "tel": "Telefon",
+        "location": "Manzil"
+    },
+
 
     "footer": {
         "subtitle": "'Ferghana Natural Product' dunyoda ishlatiladigan paxta materiallarini uzun yillar ishlab chiqaruvchi kompaniya bo'lib kelmoqda.",
