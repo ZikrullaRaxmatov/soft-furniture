@@ -12,6 +12,7 @@ import win22 from '../home/collection/diz-22-scaled-370x278.jpg'
 import win23 from '../home/collection/diz-23-scaled-370x278.jpg'
 import win24 from '../home/collection/diz-24-scaled-370x278.jpg'
 import { useParams } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const winterCollection = [
     {
@@ -70,6 +71,9 @@ console.log(winterCollection);
 
 function CollectionItem() {
 
+    // eslint-disable-next-line
+    const [t, i18n] = useTranslation("global")
+
     const { itemId } = useParams()
     const [activeDesc, setActiveDesc] = useState(true)
     const [activeReviw, setActiveReviw] = useState(false)
@@ -108,32 +112,32 @@ function CollectionItem() {
                         <table className="table table-striped-columns">
                             <tbody>
                                 <tr>
-                                    <td className="collectionItem-table-data" >Material:</td>
-                                    <td className="collectionItem-table-data" >100% cotton flannel</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.meterial")}</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.meterialD")}</td>
                                 </tr>
                                 <tr>
-                                    <td className="collectionItem-table-data" >Pillowcase:</td>
-                                    <td className="collectionItem-table-data" >50x70 cm (2 pcs.)</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.pillowcase")}</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.pillowcaseD")}</td>
                                 </tr>
                                 <tr>
-                                    <td className="collectionItem-table-data" >Bed sheet:</td>
-                                    <td className="collectionItem-table-data" >260×280 cm (1 piece)</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.bedsheet")}</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.bedsheetD")}</td>
                                 </tr>
                                 <tr>
-                                    <td className="collectionItem-table-data" >Duvet cover:</td>
-                                    <td className="collectionItem-table-data" >160x220 cm (2 pcs.)</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.duvetcover")}</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.duvetcoverD")}</td>
                                 </tr>
                                 <tr>
-                                    <td className="collectionItem-table-data" >Size:</td>
-                                    <td className="collectionItem-table-data" >Special size</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.size")}</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.sizeD")}</td>
                                 </tr>
                                 <tr>
-                                    <td className="collectionItem-table-data" >Manufacturer:</td>
-                                    <td className="collectionItem-table-data" >Ferghana Natural Product</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.manufacturer")}</td>
+                                    <td className="collectionItem-table-data" >{t("collectionItem.manufacturerD")}</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p>Category: <span>Winter collection</span></p>
+                        <p>{t("collectionItem.category")}: <span>{t("collectionItem.categoryD")}</span></p>
                     </div>
                 </div>
 
@@ -141,56 +145,56 @@ function CollectionItem() {
                 <div className="collectionItem-tabs">
                     <ul className="nav nav-tabs">
                         <li className="nav-item">
-                            <button className={activeDesc ? "nav-link active" : "nav-link"} onClick={() => handleActiveDesc()} >Description</button>
+                            <button className={activeDesc ? "nav-link active" : "nav-link"} onClick={() => handleActiveDesc()} >{t("collectionItem.description")}</button>
                             {/* <a className="nav-link active " href="#!">Description</a> */}
                         </li>
                         <li className="nav-item">
-                            <button className={activeReviw ? "nav-link active" : "nav-link"} onClick={() => handleActiveReview()} >Reviews (0)</button>
+                            <button className={activeReviw ? "nav-link active" : "nav-link"} onClick={() => handleActiveReview()} >{t("collectionItem.review")} (0)</button>
                             {/* <a className="nav-link" href="#!">Reviews </a> */}
                         </li>
                     </ul>
                 </div>
                 <div className="container">
                     <div className={`collectionItem-description ${activeDesc ? "" : "d-none"}`}>
-                        <h1>Description</h1>
-                        <span>Bed linen set Byzantium</span>
-                        <p>Bed linen is a household item and bedroom decor designed for comfort and beauty. You can choose from a variety of bed sets that include sheets, blankets, pillow crafts and other accessories. They have various designs, prints, embroideries or other design elements. They are easy and quick to clean and clean. They are made from soft materials and they make your bedrooms cozy and cozy.</p>
+                        <h1>{t("collectionItem.description")}</h1>
+                        <span>{t("collectionItem.subtitleD")}</span>
+                        <p>{t("collectionItem.text")}</p>
                     </div>
 
                     <div className={`collectionItem-reviews ${activeReviw ? "" : "d-none"}`}>
-                        <h1>Reviews</h1>
-                        <span>There is no review yet!</span>
+                        <h1>{t("collectionItem.review")}</h1>
+                        <span>{t("collectionItem.reviewResult")}</span>
 
-                        <h1 className="mt-3">Be the first to review “Byzantium”</h1>
-                        <span>Your email address will not be published. Required fields are marked *</span>
-                        <p>Your mark *</p>
+                        <h1 className="mt-3">{t("collectionItem.subtitleR")}</h1>
+                        <span>{t("collectionItem.validation")}</span>
+                        <p>{t("collectionItem.mark")}</p>
 
                         <form>
                             <div className="raw collectionItem-reviews-form">
                                 <div className="col-12 col-md-6">
-                                    <label htmlFor="name" className="form-label text-muted">Name *</label>
+                                    <label htmlFor="name" className="form-label text-muted">{t("collectionItem.name")} *</label>
                                     <input type="text" className="form-control" id="name" />
                                 </div>
                                 <div className="col-12 col-md-6">
-                                    <label htmlFor="email" className="form-label text-muted">Email *</label>
+                                    <label htmlFor="email" className="form-label text-muted">{t("collectionItem.email")} *</label>
                                     <input type="text" className="form-control" id="email" />
                                 </div>
                             </div>
                             <div className="raw collectionItem-reviews-feedback">
                                 <div className="col-12">
-                                    <label htmlFor="feedback" className="form-label text-muted">Feedback *</label>
+                                    <label htmlFor="feedback" className="form-label text-muted">{t("collectionItem.feedback")} *</label>
                                     <textarea type="text" className="form-control" id="feedback" />
                                 </div>
                             </div>
                             <div className="collectionItem-submit">
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-primary">{t("collectionItem.submit")}</button>
                             </div>
                         </form>
                     </div>
                 </div>
 
                 <div className="collectionItem-similar-products">
-                    <h1>Similar products</h1>
+                    <h1>{t("collectionItem.similar")}</h1>
                     <div className="row row-cols-1 row-cols-md-4 g-3">
                         <div className="col">
                             <div className="card card-collection h-100 ">

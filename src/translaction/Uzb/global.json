@@ -35,6 +35,54 @@
         "subtitle1": "Bu qo'llanma qisqacha ko'rsatilgan matnga qo'llanma qisqacha ko'rsatilgan matnga qo'llanma"
     },
 
+    "collection": {
+        "title": "Kolleksiya",
+        "spring": "Bahor kolleksiyasi",
+        "summer": "Yoz kolleksiyasi",
+        "autumn": "Kuz kolleksiyasi",
+        "winter": "Qish kolleksiyasi",
+        "showing": "76 ta mahsulotdan 1-16 ni ko'rsatish",
+        "sort": "Saralash turi",
+        "popularity": "Mashhurlik bo'yicha",
+        "rating": "Reyting bo'yicha",
+        "novelty": "Yangilik bo'yicha"
+    },
+
+    "collectionItem": {
+        "meterial": "Material",
+        "pillowcase": "Yostiq o'lchami",
+        "bedsheet": "Yotoq qoplami",
+        "duvetcover": "Yotoq qoplami o'rtoqligi",
+        "size": "O'lcham",
+        "manufacturer": "Ishlab chiqaruvchi",
+        "category": "Tur",
+
+        "meterialD": "100% paxta flannell",
+        "pillowcaseD": "50x70 sm (2 ta.)",
+        "bedsheetD": "260×280 sm (1 ta.)",
+        "duvetcoverD": "160x220 sm (2 ta.)",
+        "sizeD": "Maxsus o'lcham",
+        "manufacturerD": "Ferghana Natural Product",
+        "categoryD": "Qish kolleksiyasi",
+    
+        "description": "Ta'rif",
+        "subtitleD": "Yotoqxona jinslari Byzantium",
+        "text": "Yotoqxona jinslari uy vositasi va yotoqxona bezaklari, oddiylik va go'zallik uchun mo'ljallangan. Siz ta'riflarni, kamyalar, yotoq terishlarini va boshqa aksessuarlarni o'zgartiqlar qilib tanlashingiz mumkin. Ular murakkab dizayn, chizishlar, rasmli chizishlar yoki boshqa dizayn elementlariga ega. Ular sodda va tez-tez tozalab tashlanadi. Ular yumshoq materiallardan ishlangan va sizning yotoqxonalaringizni kuchli va qulay qiladi.",
+    
+        "review": "Izohlar",
+        "reviewResult": "Hali izoh yo'q!",
+        "subtitleR": "Birinchi bo'lib 'Byzantium'ga izoh qoldiring",
+        "validation": "Sizning email manzilingiz chop etilmaydi. Majburiy maydonlar * bilan belgilangan.",
+        "mark": "Sizning belgiz *",
+        "name": "Ism",
+        "email": "Email",
+        "feedback": "Fikr-mulohaza",
+        "submit": "Jo'natish",
+    
+        "similar": "O'xshash mahsulotlar"
+    },
+    
+
     "footer": {
         "subtitle": "'Ferghana Natural Product' dunyoda ishlatiladigan paxta materiallarini uzun yillar ishlab chiqaruvchi kompaniya bo'lib kelmoqda.",
         "title1": "Menyu",

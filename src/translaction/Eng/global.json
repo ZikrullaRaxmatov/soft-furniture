@@ -33,6 +33,53 @@
         "subtitle1": "This is a longer card with supporting text below as a natural lead-in to additional content. "
     }, 
 
+    "collection": {
+        "title": "Collection",
+        "spring": "Spring collection",
+        "summer": "Summer collection",
+        "autumn": "Autumn collection",
+        "winter": "Winter collection",
+        "showing": "Showing 1-16 of 76",
+        "sort": "Initial sort",
+        "popularity": "By popularity",
+        "rating": "By rating",
+        "novelty": "By novelty"
+    },
+
+    "collectionItem": {
+        "meterial": "Material",
+        "pillowcase": "Pillowcase",
+        "bedsheet":	"Bed sheet",
+        "duvetcover": "Duvet cover",
+        "size":	"Size",
+        "manufacturer":	"Manufacturer",
+        "category": "Category",
+
+        "meterialD": "100% cotton flannel",
+        "pillowcaseD": "50x70 cm (2 pcs.)",
+        "bedsheetD":	"260×280 cm (1 piece)",
+        "duvetcoverD": "160x220 cm (2 pcs.)",
+        "sizeD":	"Special size",
+        "manufacturerD":	"Ferghana Natural Product",
+        "categoryD": "Winter collection",
+
+        "description": "Description",
+        "subtitleD": "Bed linen set Byzantium",
+        "text": "Bed linen is a household item and bedroom decor designed for comfort and beauty. You can choose from a variety of bed sets that include sheets, blankets, pillow crafts and other accessories. They have various designs, prints, embroideries or other design elements. They are easy and quick to clean and clean. They are made from soft materials and they make your bedrooms cozy and cozy.",
+
+        "review": "Reviews",
+        "reviewResult": "There is no review yet!",
+        "subtitleR": "Be the first to review “Byzantium”",
+        "validation": "Your email address will not be published. Required fields are marked *",
+        "mark": "Your mark *",
+        "name": "Name",
+        "email": "Email",
+        "feedback": "Feedback",
+        "submit": "Submit",
+
+        "similar": "Similar products"
+    },  
+
     "footer": {
         "subtitle": "'Ferghana Natural Product' has been a company that produces cotton fabrics for many years for use all over the world.",
         "title1": "Menu",

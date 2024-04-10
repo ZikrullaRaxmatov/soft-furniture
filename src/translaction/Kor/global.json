@@ -34,6 +34,54 @@
         "subtitle1": "이 카드는 추가 콘텐츠로 이어지는 자연스러운 소개로 아래에 지원 텍스트가 있는 더 긴 카드입니다."
     },
 
+    "collection": {
+        "title": "컬렉션",
+        "spring": "봄 컬렉션",
+        "summer": "여름 컬렉션",
+        "autumn": "가을 컬렉션",
+        "winter": "겨울 컬렉션",
+        "showing": "76개 중 1-16 표시",
+        "sort": "초기 정렬",
+        "popularity": "인기순",
+        "rating": "평점순",
+        "novelty": "신상품순"
+    },
+
+    "collectionItem": {
+        "meterial": "재질",
+        "pillowcase": "베개 커버",
+        "bedsheet": "침대 시트",
+        "duvetcover": "이불 커버",
+        "size": "크기",
+        "manufacturer": "제조사",
+        "category": "카테고리",
+
+        "meterialD": "100% 면 플란넬",
+        "pillowcaseD": "50x70cm (2개)",
+        "bedsheetD": "260×280cm (1개)",
+        "duvetcoverD": "160x220cm (2개)",
+        "sizeD": "특별 사이즈",
+        "manufacturerD": "Ferghana Natural Product",
+        "categoryD": "겨울 컬렉션",
+    
+        "description": "설명",
+        "subtitleD": "침대 시트 세트 바이잔티움",
+        "text": "침실 시트는 편안함과 아름다움을 위해 설계된 가정용품 및 침실 장식품입니다. 시트, 담요, 베개 케이스 및 기타 액세서리로 구성된 다양한 침대 세트 중에서 선택할 수 있습니다. 다양한 디자인, 프린트, 자수 또는 기타 디자인 요소가 있습니다. 빠르고 쉽게 청소 및 세척할 수 있습니다. 부드러운 소재로 제작되어 침실을 아늑하고 편안하게 만듭니다.",
+    
+        "review": "리뷰",
+        "reviewResult": "아직 리뷰가 없습니다!",
+        "subtitleR": "첫 번째로 'Byzantium'에 리뷰를 남겨주세요.",
+        "validation": "귀하의 이메일 주소는 공개되지 않습니다. 필수 입력 사항은 *로 표시됩니다.",
+        "mark": "평점 *",
+        "name": "이름",
+        "email": "이메일",
+        "feedback": "피드백",
+        "submit": "제출",
+    
+        "similar": "유사 제품들"
+    },
+    
+
     "footer": {
         "subtitle": "'Ferghana Natural Product'은 오랜 기간 동안 전 세계에서 사용되는 면 원단을 생산하는 회사입니다.",
         "title1": "메뉴",

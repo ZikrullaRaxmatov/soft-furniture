@@ -12,6 +12,7 @@ import win22 from '../home/collection/diz-22-scaled-370x278.jpg'
 import win23 from '../home/collection/diz-23-scaled-370x278.jpg'
 import win24 from '../home/collection/diz-24-scaled-370x278.jpg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const winterCollection = [
     {
@@ -68,6 +69,10 @@ const winterCollection = [
 
 
 function Collection() {
+
+    // eslint-disable-next-line
+    const [t, i18n] = useTranslation("global")
+
     return (
         <div className="collection mt-4 mb-4">
             <div className="container">
@@ -84,15 +89,15 @@ function Collection() {
                                     <div className="accordion-item">
                                         <h2 className="accordion-header">
                                             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                                Collection
+                                                {t("collection.title")}
                                             </button>
                                         </h2>
                                         <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show">
                                             <ul className="dropdown-list">
-                                                <li><a className="dropdown-item dropdown-link " href="#!">Spring collection</a></li>
-                                                <li><a className="dropdown-item dropdown-link" href="#!">Summer collection</a></li>
-                                                <li><a className="dropdown-item dropdown-link" href="#!">Autumn collection</a></li>
-                                                <li><a className="dropdown-item dropdown-link" href="#!">Winter collection</a></li>
+                                                <li><a className="dropdown-item dropdown-link " href="#!">{t("collection.spring")}</a></li>
+                                                <li><a className="dropdown-item dropdown-link" href="#!">{t("collection.summer")}</a></li>
+                                                <li><a className="dropdown-item dropdown-link" href="#!">{t("collection.autumn")}</a></li>
+                                                <li><a className="dropdown-item dropdown-link" href="#!">{t("collection.winter")}</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -106,17 +111,17 @@ function Collection() {
                         <div className="collection-right">
                             <div className="collection-right-title">
                                 <div>
-                                    <h1>Collection</h1>
-                                    <span>Showing 1-16 of 76</span>
+                                    <h1>{t("collection.title")}</h1>
+                                    <span>{t("collection.showing")}</span>
                                 </div>
                                 <div className="btn-group">
                                     <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                                        Initial sort
+                                    {t("collection.sort")}
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item dropdown-link" href="#!">By popularity</a></li>
-                                        <li><a className="dropdown-item dropdown-link" href="#!">By rating</a></li>
-                                        <li><a className="dropdown-item dropdown-link" href="#!">By novelty</a></li>
+                                        <li><a className="dropdown-item dropdown-link" href="#!">{t("collection.popularity")}</a></li>
+                                        <li><a className="dropdown-item dropdown-link" href="#!">{t("collection.rating")}</a></li>
+                                        <li><a className="dropdown-item dropdown-link" href="#!">{t("collection.novelty")}</a></li>
                                     </ul>
                                 </div>
                             </div>
